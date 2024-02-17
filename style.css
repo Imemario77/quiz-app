@@ -90,7 +90,7 @@
 
 .choose-exam-section {
   width: 100%;
-  padding: 20px 40px;
+  padding: 20px 0;
 }
 
 .choose-exam-section h3 {
@@ -149,8 +149,9 @@ footer span {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 0 20px;
+  padding: 10px 20px;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 footer span:hover {
