@@ -44,7 +44,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: 10px 30px;
+  padding: 10px 15px;
   justify-content: space-between;
 }
 
@@ -68,9 +68,9 @@
 
 .welcome-section input {
   width: 100%;
-  padding: 5px 10px;
+  padding: 10px 10px;
   padding-left: 50px;
-  font-size: 20px;
+  font-size: 15px;
   color: gray;
   border-radius: 20px;
   border: none;
@@ -138,8 +138,8 @@ footer {
   display: flex;
   justify-content: space-around;
   color: lightgray;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   align-items: center;
 }
 
@@ -168,17 +168,20 @@ footer span p {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--accent-color);
+  background-color: #00000076;
   z-index: 6;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #444;
 }
 
 .set-time-ques > div:first-child {
+  border-radius: 20px;
   padding: 20px;
-  width: 550px;
+  max-width: 500px;
+  width: auto;
   height: fit-content;
   background-color: var(--white-color);
 }
@@ -201,6 +204,7 @@ footer span p {
   height: 50px;
   border: 2px solid var(--accent-color);
   text-align: center;
+  color: #333333bc;
   font-size: 30px;
 }
 
@@ -213,5 +217,6 @@ footer span p {
   margin: 0 20px;
   background-color: transparent;
   font-size: 30px;
+  color: #444;
   border: 0;
 }

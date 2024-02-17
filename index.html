@@ -68,11 +68,18 @@
     </main>
     <section class="set-time-ques hide">
         <div>
+
             <div class="set-time-container">
+                <span class="s-t">Set Number Of Questions</span>
+                <div class="time-container">
+                    <input id="question-" style="width: 100px;" max="100" value="50" type="number">
+                </div>
+            </div>
+            <div style="margin-top: 40px;" class="set-time-container">
                 <span class="s-t">Set Time</span>
                 <div class="time-container">
                     <span>
-                        <input onchange="changeVal()" id="hours" max="99" value="01" type="number">
+                        <input id="hours" max="5" value="01" type="number">
                         <p>Hour</p>
                     </span>
                     <span style="font-size: 30px;">:</span>
@@ -83,12 +90,6 @@
                     <span><input id="seconds" max="2" value="00" type="number">
                         <p>Second</p>
                     </span>
-                </div>
-            </div>
-            <div style="margin-top: 50px;" class="set-time-container">
-                <span class="s-t">Set Number Of Questions</span>
-                <div class="time-container">
-                    <input style="width: 100px;" max="3" value="50" type="number">
                 </div>
             </div>
             <div class="submit-set-values">

@@ -5,9 +5,9 @@ const sec = document.querySelector("#seconds");
 const closeSetTimeAndQuestion = document.querySelector(
   ".hide-set-time-question"
 );
-let test_hour = 0;
-let min_hour = 0;
-let sec_hour = 0;
+let hour_time = 0;
+let min_time = 0;
+let sec_time = 0;
 
 let current_subject = "";
 
@@ -22,15 +22,29 @@ closeSetTimeAndQuestion &&
     current_subject = "";
   });
 
-// hour &&
-//   hour.addEventListener("change", (e) => {
-//     test_hour = e.target.value;
-//     if (test_hour.length > 3) {
-//       hour.innerHTML = test_hour.slice(0, -1);
-//     }
-//     alert("hey");
-//   });
-function changeVal() {
-  console.log("hey");
-  hour.value = "0";
-}
+hour &&
+  hour.addEventListener("change", (e) => {
+    hour_time = parseInt(e.target.value);
+    if (hour_time > 5) {
+      hour.value = "05";
+      hour_time = 5;
+    }
+  });
+
+min &&
+  min.addEventListener("change", (e) => {
+    min_time = parseInt(e.target.value);
+    if (min_time > 59) {
+      min.value = "59";
+      min_time = 5;
+    }
+  });
+
+sec &&
+  sec.addEventListener("change", (e) => {
+    sec_time = parseInt(e.target.value);
+    if (sec_time > 59) {
+      sec.value = "59";
+      sec_time = 5;
+    }
+  });
