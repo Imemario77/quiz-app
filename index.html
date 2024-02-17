@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <title>Exam App</title>
+</head>
+
+<body>
+    <main id="hero">
+        <section class="welcome-section">
+            <div>
+                <span>Hello</span>
+                <span>Mario Jeremiah</span>
+            </div>
+            <div>
+                <i style="font-size: 40px;" class="fa fa-search search-btn"></i>
+                <input placeholder="Search" type="search">
+            </div>
+        </section>
+        <section class="choose-exam-section">
+            <h3>Explore categories</h3>
+            <section class="choose-exam-container">
+                <div onclick="startTest('chemistry')" class="exam">
+                    <img src="images/chemistry.png" width="150" height="150" alt="">
+                    <p>Chemistry</p>
+                </div>
+                <div onclick="startTest('Biology')" class="exam">
+                    <img src="images/bacteria.png" width="150" height="150" alt="">
+                    <p>Biology</p>
+                </div>
+                <div onclick="startTest('Physics')" class="exam">
+                    <img src="images/transverse-wave.png" alt="">
+                    <p>Physics</p>
+                </div>
+                <div onclick="startTest('History')" class="exam">
+                    <img src="images/history.png" alt="">
+                    <p>History</p>
+                </div>
+                <div onclick="startTest('Mathematics')" class="exam">
+                    <img src="images/calculator.png" alt="">
+                    <p>Mathematics</p>
+                </div>
+                <div onclick="startTest('English')" class="exam">
+                    <img src="images/book.png" alt="">
+                    <p>English</p>
+                </div>
+                <div onclick="startTest('Literature')" class="exam">
+                    <img src="images/books.png" alt="">
+                    <p>Literature</p>
+                </div>
+            </section>
+        </section>
+        <footer>
+            <span>
+                <i style="font-size: 50px;" class="fa fa-home"></i>
+                <p class="hidec">Home</p>
+            </span>
+            <span>
+                <i style="font-size: 50px;" class="fa fa-history"></i>
+                <p class="hidie">History</p>
+            </span>
+        </footer>
+    </main>
+    <section class="set-time-ques hide">
+        <div>
+            <div class="set-time-container">
+                <span class="s-t">Set Time</span>
+                <div class="time-container">
+                    <span>
+                        <input onchange="changeVal()" id="hours" max="99" value="01" type="number">
+                        <p>Hour</p>
+                    </span>
+                    <span style="font-size: 30px;">:</span>
+                    <span>
+                        <input id="minutes" max="2" value="00" type="number">
+                        <p>Minutes</p>
+                    </span><span style="font-size: 30px;">:</span>
+                    <span><input id="seconds" max="2" value="00" type="number">
+                        <p>Second</p>
+                    </span>
+                </div>
+            </div>
+            <div style="margin-top: 50px;" class="set-time-container">
+                <span class="s-t">Set Number Of Questions</span>
+                <div class="time-container">
+                    <input style="width: 100px;" max="3" value="50" type="number">
+                </div>
+            </div>
+            <div class="submit-set-values">
+                <button class="hide-set-time-question">cancel</button>
+                <button>start</button>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
