@@ -6,3 +6,7 @@
 .page-padding {
   padding: 15px 20px;
 }
+
+.answered {
+  background-color: var(--main-color) !important;
+}

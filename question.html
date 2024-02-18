@@ -12,16 +12,19 @@
 
 <body>
     <main id="hero">
+        <div class="loader">
+            <div id="scale"></div>
+        </div>
         <section class="go-back-to-home">
             <i class="fa fa-arrow-left"></i>
             <p>Question Screen</p>
-            <span><i class="fa fa-clock-o" style="padding-right: 5px;"></i>2:44:33</span>
+            <span id="q-time"><i class="fa fa-clock-o" style="padding-right: 5px;"></i>00:00:00</span>
         </section>
         <section class="question-container page-padding">
             <h3 class="subject-title">Chemistry test</h3>
             <div class="range-container">
                 <p><span></span></p>
-                <span class="current-count">1/50</span>
+                <span class="current-count"><b id="question-start-number">0</b>/<b id="question-total-number">50</b></span>
             </div>
             <div class="all-questions">
                 <div class="single-question">
@@ -32,10 +35,16 @@
                     <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia.</span>
                 </div>
-            </div>
-            <div class="all-questions">
                 <div class="single-question">
                     <h4>Question - 2</h4>
+                    <p>What is a part of Javascript? </p>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, nihil.</span>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia.</span>
+                </div>
+                <div class="single-question">
+                    <h4>Question - 3</h4>
                     <p>What is a part of Javascript? </p>
                     <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, nihil.</span>
                     <span>Lorem ipsum dolor sit amet.</span>
@@ -45,6 +54,7 @@
             </div>
         </section>
     </main>
+    <script src="index.js"></script>
 </body>
 
 </html>
