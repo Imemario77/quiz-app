@@ -1,3 +1,5 @@
+const loader = document.querySelector("#scale");
+const loader_div = document.querySelector(".loader");
 const setTimeAndQuestion = document.querySelector(".set-time-ques");
 const hour = document.querySelector("#hours");
 const min = document.querySelector("#minutes");
@@ -9,8 +11,11 @@ const closeSetTimeAndQuestion = document.querySelector(
 let hour_time = 0;
 let min_time = 0;
 let sec_time = 0;
-
 let current_subject = "";
+
+loader.addEventListener("animationend", () => {
+  loader_div.style.display = "none";
+});
 
 function startTest(subject) {
   setTimeAndQuestion.classList.remove("hide");
