@@ -70,6 +70,8 @@ question_input &&
     }
   });
 
+console.log(window.location.href);
+
 start_test_now &&
   start_test_now.addEventListener("click", () => {
     localStorage.setItem("hour", hour.value);
@@ -77,7 +79,7 @@ start_test_now &&
     localStorage.setItem("sec", sec.value);
     localStorage.setItem("question-count", question_input.value);
     localStorage.setItem("subject", current_subject);
-    window.location = "/question.html";
+    window.location = window.location.href + "question.html";
   });
 
 if (localStorage.getItem("subject")) {
@@ -148,7 +150,7 @@ quit_test &&
     const ans = confirm("are you ready to quit this test");
     if (ans) {
       localStorage.clear();
-      window.location = "/";
+      window.history.back()
     }
   });
 
