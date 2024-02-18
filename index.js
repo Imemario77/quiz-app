@@ -2,6 +2,7 @@ const setTimeAndQuestion = document.querySelector(".set-time-ques");
 const hour = document.querySelector("#hours");
 const min = document.querySelector("#minutes");
 const sec = document.querySelector("#seconds");
+const question_input = document.querySelector("#question-input");
 const closeSetTimeAndQuestion = document.querySelector(
   ".hide-set-time-question"
 );
@@ -46,5 +47,13 @@ sec &&
     if (sec_time > 59) {
       sec.value = "59";
       sec_time = 5;
+    }
+  });
+
+question_input &&
+  question_input.addEventListener("change", (e) => {
+    if (parseInt(e.target.value) > 100) {
+      question_input.value = "100";
+      alert("Number of questions should be less than or equal to 100");
     }
   });
