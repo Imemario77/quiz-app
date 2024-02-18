@@ -289,11 +289,12 @@ footer span p {
   display: flex;
   padding: 5px 10px;
   align-items: center;
-  box-shadow: 1px 1px 10px black;
+  box-shadow: 1px 1px 4px black;
   border-radius: 20px;
 }
 
 .range-container p {
+
   border: 1px solid var(--main-color);
   width: 85%;
   background-color: var(--accent-color);
@@ -318,5 +319,29 @@ footer span p {
 
 .all-questions {
   width: 100%;
-  
+  height: fit-content;
+  display: flex;
+  padding:30px 0;
+}
+
+.single-question {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.single-question h4 {
+  color: var(--main-color);
+  font-size: 25px;
+}
+
+.single-question span {
+  display: inline-block;
+  width: 100%;
+  background-color: var(--white-color);
+  height: auto;
+  min-height: 30px;
+  margin-bottom: 10px;
+  border-radius: 20px;
 }
