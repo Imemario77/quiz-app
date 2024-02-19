@@ -280,9 +280,21 @@ footer span p {
   height: fit-content;
 }
 
+.sub-title {
+  width: 100%;
+  background-color: var(--accent-color);
+  padding: 20px;
+  padding-top: 70px;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  left: 0;
+}
+
 .subject-title {
-  margin-top: 70px;
   color: #444;
+  align-self: flex-start;
   font-size: 25px;
 }
 .range-container {
@@ -295,6 +307,8 @@ footer span p {
   align-items: center;
   box-shadow: 1px 1px 4px black;
   border-radius: 20px;
+  /* margin-top: 140px; */
+  top: 0;
 }
 
 .range-container p {
@@ -321,6 +335,7 @@ footer span p {
 }
 
 .all-questions {
+  margin-top: 200px;
   width: 100%;
   height: fit-content;
   display: flex;

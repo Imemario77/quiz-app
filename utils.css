@@ -10,3 +10,7 @@
 .answered {
   background-color: var(--main-color) !important;
 }
+
+.fixed {
+  position: fixed;
+}
