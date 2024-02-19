@@ -4,11 +4,13 @@ const question_total_number = document.querySelector("#question-total-number");
 const q_time = document.querySelector("#q-time");
 const subject_title = document.querySelector(".subject-title");
 const question_box = document.querySelector(".all-questions");
-import math from "./math.js";
+const range_slider = document.querySelector(".range-slider");
 
 if (localStorage.getItem("subject")) {
   subject_title.innerHTML = localStorage.getItem("subject") + " Test";
 }
+
+subject_questions = math
 
 if (
   localStorage.getItem("hour") ||
@@ -52,7 +54,6 @@ if (
     ).toString();
     let seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000).toString();
 
-    console.log(minutes.length);
     if (minutes.length === 1) {
       minutes = `0${minutes}`;
     }
@@ -68,7 +69,7 @@ if (
     }
   }, 1000);
 } else {
-    window.history.back()
+  window.history.back();
 }
 
 quit_test &&
@@ -77,7 +78,7 @@ quit_test &&
     if (ans) {
       localStorage.clear();
       window.history.back();
-    //   window.location = window.location.href;
+      //   window.location = window.location.href;
     }
   });
 
@@ -91,10 +92,11 @@ if (question_total_number)
 // console.log(res);
 
 const questions_list = [];
+let answer_list = [];
 
 for (let index = 0; index < 1000; index++) {
   let i = Math.floor(Math.random() * 381);
-  let ques = math[i];
+  let ques = subject_questions[i];
   if (!questions_list.includes(ques)) {
     questions_list.push(ques);
   }
@@ -113,10 +115,37 @@ questions_list.map((question, index) => {
   const p = document.createElement("p");
   p.innerText = question.question;
   single_question.append(p);
-  question.options.forEach((option) => {
+  question.options.forEach((option, btn_number) => {
     const span = document.createElement("span");
+    span.setAttribute(
+      "onclick",
+      `chooseOption(${parseInt(index)},${
+        question.index
+      },'${option}',${btn_number})`
+    );
     span.innerText = option;
     single_question.append(span);
   });
   question_box.append(single_question);
 });
+
+function chooseOption(question_number, index, answer, btn_number) {
+  if (answer_list.some((item) => item.index === index)) {
+    item = answer_list.find((item) => item.index === index);
+    question_box.childNodes[question_number].childNodes[
+      item.btn_number + 2
+    ].classList.remove("answered");
+    answer_list = answer_list.filter((ele) => ele.index !== item.index);
+  }
+  answer_list.push({ index, answer, btn_number });
+  console.log(answer_list);
+  question_box.childNodes[question_number].childNodes[
+    btn_number + 2
+  ].setAttribute("class", "answered");
+
+  question_start_number.innerText = answer_list.length;
+  range_slider.style.width = `${Math.floor(
+    (answer_list.length / parseInt(localStorage.getItem("question-count"))) *
+      100
+  )}%`;
+}

@@ -25,7 +25,7 @@
             <div class="fixed sub-title">
                 <h3 class="subject-title">Chemistry test</h3>
                 <div class="range-container">
-                    <p><span></span></p>
+                    <p><span class="range-slider"></span></p>
                     <span class="current-count"><b id="question-start-number">0</b>/<b
                             id="question-total-number">50</b></span>
                 </div>
@@ -56,11 +56,22 @@
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia.</span>
                 </div>
             </div>
+            <button class="submit-test">Submit</button>
         </section>
     </main>
-    <script type="module" src="math.js"></script>
+    <script src="math.js"></script>
     <script src="index.js"></script>
-    <script type="module" src="question_page.js"></script>
+    <script src="question_page.js"></script>
+    <!-- <script>
+        const answer_list = [];
+
+        function chooseOption(question_number, index, answer, btn_number) {
+            answer_list.push({ index, answer });
+            console.log(answer_list)
+              question_box[question_number].classList.add("answered");
+        }
+
+    </script> -->
 </body>
 
 </html>

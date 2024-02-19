@@ -320,7 +320,7 @@ footer span p {
   border-radius: 20px;
 }
 
-.range-container p span {
+.range-slider {
   display: inline-block;
   width: 0%;
   height: 20px;
@@ -366,4 +366,14 @@ footer span p {
   min-height: 30px;
   margin-bottom: 10px;
   border-radius: 20px;
+}
+
+.submit-test {
+  padding: 10px 0;
+  font-size: 20px;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }

@@ -9,6 +9,7 @@
 
 .answered {
   background-color: var(--main-color) !important;
+  color: var(--white-color);
 }
 
 .fixed {
