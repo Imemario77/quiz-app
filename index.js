@@ -74,6 +74,7 @@ start_test_now &&
     localStorage.setItem("sec", sec.value);
     localStorage.setItem("question-count", question_input.value);
     localStorage.setItem("subject", current_subject);
+    closeSetTimeAndQuestion.click();
     window.location = window.location.href + "question.html";
   });
 
