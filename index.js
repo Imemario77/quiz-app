@@ -1,3 +1,5 @@
+import math from "./math.js";
+
 const loader = document.querySelector("#scale");
 const loader_div = document.querySelector(".loader");
 const setTimeAndQuestion = document.querySelector(".set-time-ques");
@@ -14,6 +16,7 @@ const subject_title = document.querySelector(".subject-title");
 const quit_test = document.querySelector(".fa-arrow-left");
 const question_start_number = document.querySelector("#question-start-number");
 const question_total_number = document.querySelector("#question-total-number");
+const register_name = document.querySelector(".register-name");
 
 let hour_time = 0;
 let min_time = 0;
@@ -150,9 +153,16 @@ quit_test &&
     const ans = confirm("are you ready to quit this test");
     if (ans) {
       localStorage.clear();
-      window.history.back()
+      window.history.back();
+      closeSetTimeAndQuestion.click();
     }
   });
 
 if (question_total_number)
   question_total_number.innerHTML = localStorage.getItem("question-count");
+
+// const res = math.map((ma, i) => {
+//   return {...ma , index: i + 1}
+// });
+
+// console.log(res);
