@@ -324,8 +324,8 @@ footer span p {
   display: inline-block;
   width: 0%;
   height: 20px;
-  border-radius: 20px;
   background-color: var(--main-color);
+  transition: width .5s linear;
 }
 
 .current-count {
@@ -376,4 +376,37 @@ footer span p {
   border: none;
   border-radius: 20px;
   margin-bottom: 10px;
+}
+
+
+.register-name {
+  top: 0;
+  left: 0;
+  z-index:6;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--accent-color);
+  justify-content: center;
+  align-items: center
+}
+.register-name input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.register-name input:focus {
+  outline: none;
+}
+
+.register-name button {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 20px;
+  background-color: var(--main-color);
+  border: none;
+  color: var(--white-color);
 }

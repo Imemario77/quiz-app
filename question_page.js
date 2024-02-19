@@ -5,6 +5,7 @@ const q_time = document.querySelector("#q-time");
 const subject_title = document.querySelector(".subject-title");
 const question_box = document.querySelector(".all-questions");
 const range_slider = document.querySelector(".range-slider");
+const submit_test = document.querySelector(".submit-test");
 
 if (localStorage.getItem("subject")) {
   subject_title.innerHTML = localStorage.getItem("subject") + " Test";
@@ -149,3 +150,10 @@ function chooseOption(question_number, index, answer, btn_number) {
       100
   )}%`;
 }
+
+
+submit_test.addEventListener("click", ()=> {
+    if (answer_list.length <  parseInt(localStorage.getItem("question-count"))/2) {
+        alert("Must finish 50% of the test before you can submit")
+    }
+})

@@ -10,6 +10,9 @@ const closeSetTimeAndQuestion = document.querySelector(
   ".hide-set-time-question"
 );
 const register_name = document.querySelector(".register-name");
+const save_name = document.querySelector(".save-name");
+const user_name = document.querySelector(".username");
+const user_name_display = document.querySelector(".display-username");
 
 let hour_time = 0;
 let min_time = 0;
@@ -19,6 +22,11 @@ let current_subject = "";
 loader.addEventListener("animationend", () => {
   loader_div.style.display = "none";
 });
+
+if (localStorage.getItem("username")) {
+  register_name.style.display = "none";
+  user_name_display.innerHTML = localStorage.getItem("username");
+}
 
 function startTest(subject) {
   setTimeAndQuestion.classList.remove("hide");
@@ -66,7 +74,6 @@ question_input &&
     }
   });
 
-
 start_test_now &&
   start_test_now.addEventListener("click", () => {
     localStorage.setItem("hour", hour.value);
@@ -78,3 +85,9 @@ start_test_now &&
     window.location = window.location.href + "question.html";
   });
 
+save_name.addEventListener("click", () => {
+  if (user_name.value !== "") {
+    localStorage.setItem("username", user_name.value);
+    register_name.style.display = "none";
+  }
+});
