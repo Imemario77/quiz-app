@@ -33,7 +33,7 @@ function getLastInsertedItem(storeName) {
   const transaction = db.transaction([storeName], "readonly");
   const objectStore = transaction.objectStore(storeName);
 
-  const request = objectStore.openCursor(null, "prev"); // Opening cursor in reverse order
+  const request = objectStore.openCursor(null, "prev"); // Opening cursor in reverse orde
 
   return new Promise((resolve, reject) => {
     request.onsuccess = function (event) {
@@ -66,5 +66,25 @@ function saveToIndexedDB(data, storeName) {
   request.onerror = function (event) {
     console.error("Error saving data to IndexedDB");
     return false;
+  };
+}
+
+function getHistoryFromDB(data, history_box) {
+  const transaction = db.transaction(["history"], "readwrite");
+  const objectStore = transaction.objectStore("history");
+  const his_sub = objectStore.index("subject");
+
+  const request = his_sub.getAll([data]);
+  request.onsuccess = function () {
+    request.result.forEach((res) => {
+      const div = document.createElement("div");
+      div.innerText = res.date;
+      history_box.append(div);
+    });
+  };
+
+  request.onerror = function () {
+    console.error("Error geting data from IndexedDB");
+    return null;
   };
 }

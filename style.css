@@ -169,7 +169,6 @@ footer {
   left: 0;
   display: flex;
   justify-content: space-around;
-  color: lightgray;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   align-items: center;
@@ -184,6 +183,11 @@ footer span {
   padding: 10px 20px;
   border-radius: 20px;
   overflow: hidden;
+}
+
+footer a {
+  color: lightgray;
+  text-decoration: none;
 }
 
 footer span:hover {
@@ -424,7 +428,7 @@ footer span p {
   padding-top: 70px !important;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
   width: 100%;
   padding: 10px;
   height: auto;
@@ -448,5 +452,15 @@ footer span p {
 .show-history-tray {
   width: 100%;
   height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.show-history-tray div {
+  width: 95%;
   background-color: white;
+  padding: 15px 20px;
+  align-self: flex-end;
 }
