@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <title>Score</title>
+</head>
+
+<body>
+    <main id="hero">
+        <div class="loader">
+            <div id="scale"></div>,
+        </div>
+        <section class="go-back-to-home">
+            <i class="fa fa-arrow-left"></i>
+            <p>History</p>
+        </section>
+        <section class="history-container ">
+            <div onclick="seeHistory('chemistry')" class="his-click">
+                <img src="images/chemistry.png" width="150" height="150" alt="">
+                <p>Chemistry</p>
+            </div>
+            <section id="chemistry" class="show-history-tray"></section>
+            <div onclick="seeHistory('Biology')" class="his-click">
+                <img src="images/bacteria.png" width="150" height="150" alt="">
+                <p>Biology</p>
+            </div>
+            <section id="Biology" class="show-history-tray"></section>
+            <div onclick="seeHistory('Physics')" class="his-click">
+                <img src="images/transverse-wave.png" alt="">
+                <p>Physics</p>
+            </div>
+            <section id="Physics" class="show-history-tray"></section>
+            <div onclick="seeHistory('History')" class="his-click">
+                <img src="images/history.png" alt="">
+                <p>History</p>
+            </div>
+            <section id="History" class="show-history-tray"></section>
+            <div onclick="seeHistory('Mathematics')" class="his-click">
+                <img src="images/calculator.png" alt="">
+                <p>Mathematics</p>
+            </div>
+            <section id="Mathematics" class="show-history-tray"></section>
+            <div onclick="seeHistory('English')" class="his-click">
+                <img src="images/book.png" alt="">
+                <p>English</p>
+            </div>
+            <section id="English" class="show-history-tray"></section>
+            <div onclick="seeHistory('Literature')" class="his-click">
+                <img src="images/books.png" alt="">
+                <p>Literature</p>
+            </div>
+            <section id="Literature" class="show-history-tray"></section>
+        </section>
+    </main>
+    <script src="db.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

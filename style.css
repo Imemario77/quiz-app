@@ -415,3 +415,38 @@ footer span p {
   display: flex;
   justify-content: space-around;
 }
+
+.taken-date {
+  font-size: 15px;
+}
+
+.history-container {
+  padding-top: 70px !important;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+}
+
+.his-click {
+  font-size: 30px;
+  width: 100%;
+  height: auto;
+  padding: 10px 15px;
+  background-color: var(--white-color);
+  display: flex;
+  gap: 1.5rem;
+}
+
+.his-click img {
+  width: 50px;
+  height: auto;
+}
+
+.show-history-tray {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+}

@@ -5,6 +5,8 @@ const subject_title = document.querySelector(".subject-title");
 const question_box = document.querySelector(".all-questions");
 const range_slider = document.querySelector(".range-slider");
 const submit_test = document.querySelector(".submit-test");
+const quit_test = document.querySelector(".fa-arrow-left");
+
 let questions_list;
 let answer_list;
 
@@ -183,3 +185,15 @@ submit_test.addEventListener("click", () => {
   );
   window.location = window.location.href.replace("question", "score");
 });
+
+quit_test &&
+  quit_test.addEventListener("click", () => {
+    const ans = confirm("are you ready to quit this test");
+    if (ans) {
+      const name = localStorage.getItem("username");
+      localStorage.clear();
+      localStorage.setItem("username", name);
+      localStorage.setItem("finished-now", true);
+      window.location = window.location.href.replace("question", "index");
+    }
+  });
