@@ -78,6 +78,7 @@ function getHistoryFromDB(data, history_box) {
   request.onsuccess = function () {
     request.result.forEach((res) => {
       const div = document.createElement("div");
+      div.setAttribute("onclick", "displaySIngleHistory(" + res.id + ")");
       div.innerText = res.date;
       history_box.append(div);
     });
@@ -87,4 +88,19 @@ function getHistoryFromDB(data, history_box) {
     console.error("Error geting data from IndexedDB");
     return null;
   };
+}
+function getSIngleHistoryFromDB(data) {
+  const transaction = db.transaction(["history"], "readwrite");
+  const objectStore = transaction.objectStore("history");
+
+  const request = objectStore.get(parseInt(data));
+  return new Promise((resolve, reject) => {
+    request.onsuccess = function (event) {
+      resolve(request.result);
+    };
+
+    request.onerror = function (event) {
+      reject(event.target.error);
+    };
+  });
 }

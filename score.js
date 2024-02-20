@@ -1,6 +1,7 @@
 const subject_title = document.querySelector(".subject-title");
 const pass_id = document.querySelector("#pass");
 const fail_id = document.querySelector("#fail");
+const attempted_id = document.querySelector("#attempted");
 const question_box = document.querySelector(".all-questions");
 const quit_test = document.querySelector(".fa-arrow-left");
 const taken_date = document.querySelector(".taken-date");
@@ -9,6 +10,7 @@ let correctNumber = 0;
 let failedNumber = 0;
 
 function display_history(lastItem) {
+  question_box.innerHTML = "";
   subject_title.innerHTML = lastItem.subject;
   lastItem.question.map((question, index) => {
     const single_question = document.createElement("div");
@@ -52,29 +54,52 @@ function display_history(lastItem) {
       }
     });
   });
-  pass_id.innerText = "Passed: " + correctNumber;
+  pass_id.innerText =
+    "Passed: " + correctNumber + "/" + lastItem.question.length;
   failedNumber = lastItem.question.length - correctNumber;
-  fail_id.innerText = "Failed: " + failedNumber;
+  fail_id.innerText =
+    "Failed: " + failedNumber + "/" + lastItem.question.length;
   taken_date.innerText = lastItem.date;
+  attempted_id.innerHTML =
+    "Attempted: " + lastItem.data.length + "/" + lastItem.question.length;
 }
-// Wait for the IndexedDB request to succeed
+
 request.onsuccess = function (event) {
   db = event.target.result;
+  if (localStorage.getItem("finished-now")) {
+    // Wait for the IndexedDB request to succeed
 
-  getLastInsertedItem("history")
-    .then((lastItem) => {
-      if (lastItem) {
-        display_history(lastItem);
-      } else {
-        window.location = window.location.href.replace("score", "index");
-      }
-    })
-    .catch((error) => {
-      console.error("Error retrieving last item:", error);
-    });
+    getLastInsertedItem("history")
+      .then((lastItem) => {
+        if (lastItem) {
+          display_history(lastItem);
+        } else {
+          window.location = window.location.href.replace("score", "index");
+        }
+      })
+      .catch((error) => {
+        console.error("Error retrieving last item:", error);
+      });
+  } else if (localStorage.getItem("viewing")) {
+    getSIngleHistoryFromDB(localStorage.getItem("viewing"))
+      .then((lastItem) => {
+        if (lastItem) {
+          display_history(lastItem);
+        } else {
+          window.location = window.location.href.replace("score", "history");
+        }
+      })
+      .catch((error) => {
+        console.error("Error retrieving last item:", error);
+      });
+  } else {
+    window.location = window.location.href.replace("score", "history");
+  }
+  localStorage.removeItem("finished-now");
+  localStorage.removeItem("viewing");
 };
 
 quit_test &&
   quit_test.addEventListener("click", () => {
-    window.location = window.location.href.replace("score", "index");
+    window.location = window.location.href.replace("score", "history");
   });

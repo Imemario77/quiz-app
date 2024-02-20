@@ -9,12 +9,42 @@ const quit_test = document.querySelector(".fa-arrow-left");
 
 let questions_list;
 let answer_list;
+let subject_questions;
+let number_of_ques = 500;
+let time_up = false;
 
 if (localStorage.getItem("subject")) {
   subject_title.innerHTML = localStorage.getItem("subject") + " Test";
-}
+  switch (localStorage.getItem("subject")) {
+    case "Mathematics":
+      subject_questions = math;
+      number_of_ques = math.length;
+      break;
+    case "chemistry":
+      subject_questions = math;
+      break;
+    case "Biology":
+      subject_questions = biology;
+      number_of_ques = biology.length;
+      break;
+    case "Physics":
+      subject_questions = math;
+      break;
+    case "History":
+      subject_questions = math;
+      break;
+    case "English":
+      subject_questions = math;
+      break;
+    case "Literature":
+      subject_questions = math;
+      break;
 
-subject_questions = math;
+    default:
+      window.location = window.location.href.replace("question", "index");
+      break;
+  }
+}
 
 if (
   localStorage.getItem("hour") ||
@@ -69,10 +99,8 @@ if (
     if (timeRemaining < 0) {
       q_time.innerHTML = `<i class='fa fa-clock-o' style='padding-right: 5px;'> 00:00:00</i>`;
       clearInterval(countdown);
+      time_up = true;
       submit_test.click();
-      const name = localStorage.getItem("username");
-      localStorage.clear();
-      localStorage.setItem("username", name);
     }
   }, 1000);
   questions_list = localStorage.getItem("question-list")
@@ -88,15 +116,15 @@ if (
 if (question_total_number)
   question_total_number.innerHTML = localStorage.getItem("question-count");
 
-// const res = math.map((ma, i) => {
-//   return {...ma , index: i + 1}
+// const res = biology.map((ma, i) => {
+//   return { ...ma, index: i + 1 };
 // });
 
 // console.log(res);
 
 if (questions_list.length <= 0) {
   for (let index = 0; index < 1000; index++) {
-    let i = Math.floor(Math.random() * 381);
+    let i = Math.floor(Math.random() * number_of_ques);
     let ques = subject_questions[i];
     if (!questions_list.includes(ques)) {
       questions_list.push(ques);
@@ -168,8 +196,8 @@ function chooseOption(question_number, index, answer, btn_number) {
 
 submit_test.addEventListener("click", () => {
   if (
-    answer_list.length <
-    parseInt(localStorage.getItem("question-count")) / 2
+    answer_list.length < parseInt(localStorage.getItem("question-count")) / 2 &&
+    time_up === false
   ) {
     alert("Must finish 50% of the test before you can submit");
     return "";
@@ -183,6 +211,10 @@ submit_test.addEventListener("click", () => {
     },
     "history"
   );
+  const name = localStorage.getItem("username");
+  localStorage.clear();
+  localStorage.setItem("username", name);
+  localStorage.setItem("finished-now", true);
   window.location = window.location.href.replace("question", "score");
 });
 
@@ -193,7 +225,6 @@ quit_test &&
       const name = localStorage.getItem("username");
       localStorage.clear();
       localStorage.setItem("username", name);
-      localStorage.setItem("finished-now", true);
       window.location = window.location.href.replace("question", "index");
     }
   });

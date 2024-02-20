@@ -453,7 +453,7 @@ const biology = [
     options: ["Auxin", "Gibberellin", "Cytokinin", "Thymosin"],
   },
   {
-    index: 55,
+    index: 54,
     question:
       "Which of the following is not a function of the reproductive system?",
     correct_answer: "Regulation of blood sugar levels",
@@ -465,54 +465,54 @@ const biology = [
     ],
   },
   {
-    index: 56,
+    index: 55,
     question:
       "What is the term for the process by which a virus enters a host cell?",
     correct_answer: "Attachment",
     options: ["Replication", "Attachment", "Penetration", "Integration"],
   },
   {
-    index: 57,
+    index: 56,
     question:
       "Which of the following is not a component of the plant cell wall?",
     correct_answer: "Cholesterol",
     options: ["Cellulose", "Pectin", "Lignin", "Cholesterol"],
   },
   {
-    index: 58,
+    index: 57,
     question:
       "What is the name of the structure that stores bile produced by the liver?",
     correct_answer: "Gallbladder",
     options: ["Pancreas", "Spleen", "Gallbladder", "Appendix"],
   },
   {
-    index: 59,
+    index: 58,
     question: "Which of the following is not a component of the immune system?",
     correct_answer: "Thyroid gland",
     options: ["Thymus", "Bone marrow", "Spleen", "Thyroid gland"],
   },
   {
-    index: 60,
+    index: 59,
     question:
       "What is the term for the process by which an organism grows and develops?",
     correct_answer: "Development",
     options: ["Growth", "Reproduction", "Differentiation", "Development"],
   },
   {
-    index: 61,
+    index: 60,
     question: "Which of the following is not a type of symbiotic relationship?",
     correct_answer: "Competition",
     options: ["Mutualism", "Commensalism", "Parasitism", "Competition"],
   },
   {
-    index: 62,
+    index: 61,
     question:
       "What is the term for the process by which an organism produces offspring?",
     correct_answer: "Reproduction",
     options: ["Fertilization", "Development", "Growth", "Reproduction"],
   },
   {
-    index: 63,
+    index: 62,
     question: "Which of the following is not a type of RNA?",
     correct_answer: "DNA polymerase",
     options: [
@@ -523,14 +523,14 @@ const biology = [
     ],
   },
   {
-    index: 64,
+    index: 63,
     question:
       "What is the term for the process by which plants respond to stimuli by growing toward or away from the stimulus?",
     correct_answer: "Tropism",
     options: ["Photosynthesis", "Transpiration", "Tropism", "Respiration"],
   },
   {
-    index: 65,
+    index: 64,
     question:
       "Which of the following is not a function of the skeletal system?",
     correct_answer: "Production of hormones",
@@ -542,14 +542,14 @@ const biology = [
     ],
   },
   {
-    index: 66,
+    index: 65,
     question:
       "What is the name of the process by which water is lost from a plant through pores in its leaves?",
     correct_answer: "Transpiration",
     options: ["Photosynthesis", "Respiration", "Transpiration", "Evaporation"],
   },
   {
-    index: 67,
+    index: 66,
     question:
       "Which of the following is not a function of the excretory system?",
     correct_answer: "Production of hormones",
@@ -561,7 +561,7 @@ const biology = [
     ],
   },
   {
-    index: 68,
+    index: 67,
     question:
       "What is the name of the fluid that surrounds the fetus in the womb?",
     correct_answer: "Amniotic fluid",
@@ -573,7 +573,7 @@ const biology = [
     ],
   },
   {
-    index: 69,
+    index: 68,
     question:
       "Which of the following is not a function of the lymphatic system?",
     correct_answer: "Production of red blood cells",
@@ -585,28 +585,28 @@ const biology = [
     ],
   },
   {
-    index: 70,
+    index: 69,
     question:
       "What is the name of the process by which a cell divides to produce two daughter cells?",
     correct_answer: "Mitosis",
     options: ["Meiosis", "Fertilization", "Apoptosis", "Mitosis"],
   },
   {
-    index: 71,
+    index: 70,
     question:
       "Which of the following is not a component of the integumentary system?",
     correct_answer: "Liver",
     options: ["Skin", "Hair", "Nails", "Liver"],
   },
   {
-    index: 72,
+    index: 71,
     question:
       "What is the name of the process by which organisms maintain a stable internal environment?",
     correct_answer: "Homeostasis",
     options: ["Adaptation", "Evolution", "Metabolism", "Homeostasis"],
   },
   {
-    index: 73,
+    index: 72,
     question: "Which of the following is not a type of plant tissue?",
     correct_answer: "Nervous tissue",
     options: [
@@ -617,13 +617,13 @@ const biology = [
     ],
   },
   {
-    index: 74,
+    index: 73,
     question: "What is the name of the process by which DNA is copied?",
     correct_answer: "Replication",
     options: ["Transcription", "Translation", "Replication", "Mutation"],
   },
   {
-    index: 75,
+    index: 74,
     question:
       "Which of the following is not a function of the excretory system?",
     correct_answer: "Production of hormones",
@@ -635,26 +635,26 @@ const biology = [
     ],
   },
   {
-    index: 76,
+    index: 75,
     question:
       "What is the term for the process by which an organism grows and develops?",
     correct_answer: "Development",
     options: ["Growth", "Reproduction", "Differentiation", "Development"],
   },
   {
-    index: 77,
+    index: 76,
     question: "Which of the following is not a type of bone?",
     correct_answer: "Epiglottis",
     options: ["Femur", "Tibia", "Skull", "Epiglottis"],
   },
   {
-    index: 54,
+    index: 77,
     question: "Which of the following is not a type of plant hormone?",
     correct_answer: "Thymosin",
     options: ["Auxin", "Gibberellin", "Cytokinin", "Thymosin"],
   },
   {
-    index: 55,
+    index: 78,
     question:
       "What is the term for the movement of molecules from an area of high concentration to an area of low concentration?",
     correct_answer: "Diffusion",
@@ -666,7 +666,7 @@ const biology = [
     ],
   },
   {
-    index: 56,
+    index: 79,
     question:
       "Which of the following is not a function of the reproductive system?",
     correct_answer: "Regulation of blood sugar levels",
@@ -678,69 +678,68 @@ const biology = [
     ],
   },
   {
-    index: 57,
+    index: 80,
     question:
       "What is the term for the process by which a virus enters a host cell?",
     correct_answer: "Attachment",
     options: ["Replication", "Attachment", "Penetration", "Integration"],
   },
   {
-    index: 58,
+    index: 81,
     question:
       "Which of the following is not a component of the plant cell wall?",
     correct_answer: "Cholesterol",
     options: ["Cellulose", "Pectin", "Lignin", "Cholesterol"],
   },
   {
-    index: 59,
+    index: 82,
     question:
       "What is the name of the structure that stores bile produced by the liver?",
     correct_answer: "Gallbladder",
     options: ["Pancreas", "Spleen", "Gallbladder", "Appendix"],
   },
   {
-    index: 60,
+    index: 83,
     question: "Which of the following is not a component of the immune system?",
     correct_answer: "Thyroid gland",
     options: ["Thymus", "Bone marrow", "Spleen", "Thyroid gland"],
   },
   {
-    index: 61,
+    index: 84,
     question:
       "What is the term for the process by which an organism grows and develops?",
     correct_answer: "Development",
     options: ["Growth", "Reproduction", "Differentiation", "Development"],
   },
   {
-    index: 62,
+    index: 85,
     question: "Which of the following is not a type of symbiotic relationship?",
     correct_answer: "Competition",
     options: ["Mutualism", "Commensalism", "Parasitism", "Competition"],
   },
   {
-    index: 63,
+    index: 86,
     question:
       "What is the term for the process by which an organism produces offspring?",
     correct_answer: "Reproduction",
     options: ["Fertilization", "Development", "Growth", "Reproduction"],
   },
   {
-    index: 64,
+    index: 87,
     question:
       "Which of the following is not a component of the central nervous system?",
     correct_answer: "Adrenal glands",
     options: ["Brain", "Spinal cord", "Peripheral nerves", "Adrenal glands"],
   },
   {
-    index: 65,
+    index: 88,
     question:
       "What is the name of the process by which plants release oxygen into the atmosphere?",
     correct_answer: "Photosynthesis",
     options: ["Respiration", "Fermentation", "Photosynthesis", "Transpiration"],
   },
   {
-    index: 1,
-    difficulty: "hard",
+    index: 89,
     question:
       "What is the name of the process by which bacteria exchange genetic material?",
     options: [
@@ -752,16 +751,14 @@ const biology = [
     answer: "C. Conjugation",
   },
   {
-    index: 2,
-    difficulty: "medium",
+    index: 90,
     question:
       "What is the term for a group of cells that perform a specific function?",
     options: ["A. Organ", "B. Tissue", "C. System", "D. Organism"],
     answer: "B. Tissue",
   },
   {
-    index: 3,
-    difficulty: "hard",
+    index: 91,
     question:
       "What is the name of the enzyme that unwinds the DNA helix during replication?",
     options: [
@@ -773,8 +770,7 @@ const biology = [
     answer: "C. DNA helicase",
   },
   {
-    index: 4,
-    difficulty: "medium",
+    index: 92,
     question:
       "What is the term for the movement of water across a semipermeable membrane from an area of low solute concentration to an area of high solute concentration?",
     options: [
@@ -786,23 +782,20 @@ const biology = [
     answer: "B. Osmosis",
   },
   {
-    index: 5,
-    difficulty: "hard",
+    index: 93,
     question:
       "What is the name of the process by which a cell divides into two identical daughter cells?",
     options: ["A. Meiosis", "B. Mitosis", "C. Cytokinesis", "D. Apoptosis"],
     answer: "B. Mitosis",
   },
   {
-    index: 6,
-    difficulty: "medium",
+    index: 94,
     question: "What is the term for the physical expression of a gene?",
     options: ["A. Genotype", "B. Phenotype", "C. Allele", "D. Trait"],
     answer: "B. Phenotype",
   },
   {
-    index: 7,
-    difficulty: "hard",
+    index: 95,
     question:
       "What is the name of the organelle that converts glucose into ATP?",
     options: [
@@ -814,44 +807,42 @@ const biology = [
     answer: "C. Mitochondrion",
   },
   {
-    index: 8,
-    difficulty: "medium",
+    index: 96,
     question:
       "What is the term for the study of the interactions between organisms and their environment?",
     options: ["A. Ecology", "B. Ethology", "C. Evolution", "D. Epidemiology"],
     answer: "A. Ecology",
   },
   {
-    index: 9,
-    difficulty: "hard",
+    index: 97,
     question:
       "What is the name of the molecule that carries oxygen in red blood cells?",
     options: ["A. Hemoglobin", "B. Myoglobin", "C. Collagen", "D. Keratin"],
     answer: "A. Hemoglobin",
   },
   {
-    index: 1,
+    index: 98,
     question:
       "What is the name of the process by which bacteria exchange genetic material?",
     options: ["Transduction", "Transformation", "Conjugation", "Replication"],
     correct_answer: "Conjugation",
   },
   {
-    index: 2,
+    index: 99,
     question:
       "What is the term for a group of cells that perform a specific function?",
     options: ["Organ", "Tissue", "System", "Organism"],
     correct_answer: "Tissue",
   },
   {
-    index: 3,
+    index: 100,
     question:
       "What is the name of the enzyme that unwinds the DNA helix during replication?",
     options: ["DNA polymerase", "DNA ligase", "DNA helicase", "DNA gyrase"],
     correct_answer: "DNA helicase",
   },
   {
-    index: 4,
+    index: 101,
     question:
       "What is the term for the movement of water across a semipermeable membrane from an area of low solute concentration to an area of high solute concentration?",
     options: [
@@ -863,48 +854,48 @@ const biology = [
     correct_answer: "Osmosis",
   },
   {
-    index: 5,
+    index: 102,
     question:
       "What is the name of the process by which a cell divides into two identical daughter cells?",
     options: ["Meiosis", "Mitosis", "Cytokinesis", "Apoptosis"],
     correct_answer: "Mitosis",
   },
   {
-    index: 6,
+    index: 103,
     question: "What is the term for the physical expression of a gene?",
     options: ["Genotype", "Phenotype", "Allele", "Trait"],
     correct_answer: "Phenotype",
   },
   {
-    index: 7,
+    index: 104,
     question:
       "What is the name of the organelle that converts glucose into ATP?",
     options: ["Chloroplast", "Ribosome", "Mitochondrion", "Lysosome"],
     correct_answer: "Mitochondrion",
   },
   {
-    index: 8,
+    index: 105,
     question:
       "What is the term for the study of the interactions between organisms and their environment?",
     options: ["Ecology", "Ethology", "Evolution", "Epidemiology"],
     correct_answer: "Ecology",
   },
   {
-    index: 9,
+    index: 106,
     question:
       "What is the name of the molecule that carries oxygen in red blood cells?",
     options: ["Hemoglobin", "Myoglobin", "Collagen", "Keratin"],
     correct_answer: "Hemoglobin",
   },
   {
-    index: 10,
+    index: 107,
     question:
       "What is the term for the process by which plants use light energy to make glucose from carbondioxide and water?",
     options: ["Photosynthesis", "Respiration", "Transpiration", "Fermentation"],
     correct_answer: "Photosynthesis",
   },
   {
-    index: 66,
+    index: 108,
     question: "Which of the following is not a function of the nervous system?",
     correct_answer: "Transport of nutrients",
     options: [
@@ -915,105 +906,105 @@ const biology = [
     ],
   },
   {
-    index: 67,
+    index: 109,
     question:
       "What is the name of the process by which cells engulf large particles or other cells?",
     correct_answer: "Endocytosis",
     options: ["Exocytosis", "Phagocytosis", "Pinocytosis", "Endocytosis"],
   },
   {
-    index: 68,
+    index: 110,
     question:
       "Which of the following is not a component of the female reproductive system?",
     correct_answer: "Vas deferens",
     options: ["Ovary", "Uterus", "Vagina", "Vas deferens"],
   },
   {
-    index: 69,
+    index: 111,
     question:
       "What is the name of the process by which organisms convert light energy into chemical energy?",
     correct_answer: "Photosynthesis",
     options: ["Respiration", "Fermentation", "Photosynthesis", "Transpiration"],
   },
   {
-    index: 70,
+    index: 112,
     question:
       "Which of the following is not a component of the male reproductive system?",
     correct_answer: "Oviduct",
     options: ["Testis", "Epididymis", "Prostate gland", "Oviduct"],
   },
   {
-    index: 71,
+    index: 113,
     question:
       "What is the name of the process by which cells break down molecules to release energy without using oxygen?",
     correct_answer: "Fermentation",
     options: ["Respiration", "Fermentation", "Photosynthesis", "Transpiration"],
   },
   {
-    index: 11,
+    index: 114,
     question:
       "What is the name of the process by which a cell engulfs a large particle or another cell?",
     options: ["Phagocytosis", "Pinocytosis", "Endocytosis", "Exocytosis"],
     correct_answer: "Phagocytosis",
   },
   {
-    index: 12,
+    index: 115,
     question:
       "What is the term for the type of cell division that produces gametes (sperm and egg cells)?",
     options: ["Meiosis", "Mitosis", "Cytokinesis", "Apoptosis"],
     correct_answer: "Meiosis",
   },
   {
-    index: 13,
+    index: 116,
     question:
       "What is the name of the molecule that stores genetic information in the nucleus of a cell?",
     options: ["DNA", "RNA", "Protein", "Lipid"],
     correct_answer: "DNA",
   },
   {
-    index: 14,
+    index: 117,
     question:
       "What is the term for the smallest unit of life that can function independently?",
     options: ["Cell", "Atom", "Molecule", "Organism"],
     correct_answer: "Cell",
   },
   {
-    index: 15,
+    index: 118,
     question:
       "What is the name of the process by which plants release water vapor from their leaves?",
     options: ["Photosynthesis", "Respiration", "Transpiration", "Fermentation"],
     correct_answer: "Transpiration",
   },
   {
-    index: 16,
+    index: 119,
     question:
       "What is the term for the branch of biology that deals with the classification of living things?",
     options: ["Taxonomy", "Anatomy", "Physiology", "Genetics"],
     correct_answer: "Taxonomy",
   },
   {
-    index: 17,
+    index: 120,
     question:
       "What is the name of the protein that forms the main component of hair and nails?",
     options: ["Hemoglobin", "Myoglobin", "Collagen", "Keratin"],
     correct_answer: "Keratin",
   },
   {
-    index: 18,
+    index: 121,
     question:
       "What is the term for the chemical reaction that breaks down organic molecules into simple substances and releases energy?",
     options: ["Photosynthesis", "Respiration", "Transpiration", "Fermentation"],
     correct_answer: "Respiration",
   },
   {
-    index: 19,
+    index: 122,
     question:
       "What is the name of the structure that connects the two halves of the brain and allows communication between them?",
     options: ["Corpus callosum", "Cerebellum", "Hypothalamus", "Thalamus"],
     correct_answer: "Corpus callosum",
   },
   {
-    index: 20,
+    index: 123,
     question:
       "What is the term for the type of reproduction that involves only one parent and produces genetically identical offspring?",
     options: [
@@ -1025,70 +1016,70 @@ const biology = [
     correct_answer: "Asexual reproduction",
   },
   {
-    index: 21,
+    index: 124,
     question:
       "What is the name of the process by which a cell releases large particles or substances to the outside environment?",
     options: ["Phagocytosis", "Pinocytosis", "Endocytosis", "Exocytosis"],
     correct_answer: "Exocytosis",
   },
   {
-    index: 22,
+    index: 125,
     question:
       "What is the term for the type of inheritance in which two different alleles of a gene are both expressed in the phenotype?",
     options: ["Dominant", "Recessive", "Codominant", "Incomplete"],
     correct_answer: "Codominant",
   },
   {
-    index: 23,
+    index: 126,
     question:
       "What is the name of the molecule that carries amino acids to the ribosome for protein synthesis?",
     options: ["DNA", "RNA", "tRNA", "mRNA"],
     correct_answer: "tRNA",
   },
   {
-    index: 24,
+    index: 127,
     question:
       "What is the term for the basic structural and functional unit of the nervous system?",
     options: ["Neuron", "Nerve", "Synapse", "Axon"],
     correct_answer: "Neuron",
   },
   {
-    index: 25,
+    index: 128,
     question:
       "What is the name of the pigment that gives plants their green color and absorbs light for photosynthesis?",
     options: ["Chlorophyll", "Carotene", "Anthocyanin", "Melanin"],
     correct_answer: "Chlorophyll",
   },
   {
-    index: 26,
+    index: 129,
     question:
       "What is the term for the level of organization that consists of several different tissues working together to perform a common function?",
     options: ["Cell", "Organ", "System", "Organism"],
     correct_answer: "Organ",
   },
   {
-    index: 27,
+    index: 130,
     question:
       "What is the name of the protein that binds to oxygen in muscle cells?",
     options: ["Hemoglobin", "Myoglobin", "Collagen", "Keratin"],
     correct_answer: "Myoglobin",
   },
   {
-    index: 28,
+    index: 131,
     question:
       "What is the term for the process by which some bacteria and fungi break down organic matter into simpler substances and release carbon dioxide and alcohol?",
     options: ["Photosynthesis", "Respiration", "Transpiration", "Fermentation"],
     correct_answer: "Fermentation",
   },
   {
-    index: 29,
+    index: 132,
     question:
       "What is the name of the structure that controls the entry and exit of substances into and out of a cell?",
     options: ["Cell wall", "Cell membrane", "Nuclear membrane", "Cytoplasm"],
     correct_answer: "Cell membrane",
   },
   {
-    index: 30,
+    index: 133,
     question:
       "What is the term for the type of cell that has a nucleus and other membrane-bound organelles?",
     options: [
@@ -1100,42 +1091,42 @@ const biology = [
     correct_answer: "Eukaryotic cell",
   },
   {
-    index: 31,
+    index: 134,
     question:
       "What is the name of the process by which a liquid changes into a gas?",
     options: ["Evaporation", "Condensation", "Sublimation", "Deposition"],
     correct_answer: "Evaporation",
   },
   {
-    index: 32,
+    index: 135,
     question:
       "What is the term for the type of mutation that changes one nucleotide in a DNA sequence?",
     options: ["Insertion", "Deletion", "Substitution", "Inversion"],
     correct_answer: "Substitution",
   },
   {
-    index: 33,
+    index: 136,
     question:
       "What is the name of the organelle that contains digestive enzymes and breaks down worn-out or damaged cell components?",
     options: ["Chloroplast", "Ribosome", "Mitochondrion", "Lysosome"],
     correct_answer: "Lysosome",
   },
   {
-    index: 34,
+    index: 137,
     question:
       "What is the term for the type of symbiotic relationship in which both organisms benefit?",
     options: ["Parasitism", "Commensalism", "Mutualism", "Competition"],
     correct_answer: "Mutualism",
   },
   {
-    index: 35,
+    index: 138,
     question:
       "What is the name of the structure that produces sperm in male animals?",
     options: ["Testis", "Ovary", "Uterus", "Prostate"],
     correct_answer: "Testis",
   },
   {
-    index: 36,
+    index: 139,
     question:
       "What is the term for the type of tissue that covers the body surface and lines the internal cavities and organs?",
     options: [
@@ -1147,28 +1138,28 @@ const biology = [
     correct_answer: "Epithelial tissue",
   },
   {
-    index: 37,
+    index: 140,
     question:
       "What is the name of the molecule that is composed of a nitrogenous base, a sugar, and a phosphate group?",
     options: ["Nucleotide", "Amino acid", "Fatty acid", "Monosaccharide"],
     correct_answer: "Nucleotide",
   },
   {
-    index: 38,
+    index: 141,
     question:
       "What is the term for the type of blood vessel that carries blood away from the heart?",
     options: ["Artery", "Vein", "Capillary", "Lymphatic vessel"],
     correct_answer: "Artery",
   },
   {
-    index: 39,
+    index: 142,
     question:
       "What is the name of the structure that produces eggs in female animals?",
     options: ["Testis", "Ovary", "Uterus", "Prostate"],
     correct_answer: "Ovary",
   },
   {
-    index: 40,
+    index: 143,
     question:
       "What is the term for the type of tissue that contracts and produces movement?",
     options: [

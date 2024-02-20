@@ -2542,829 +2542,829 @@ const math = [
     options: ["-2 and -5", "2 and 5", "-2 and 5", "2 and -5"],
   },
   {
-    index: 1,
+    index: 382,
     question: "What is the probability of rolling a 6 on a fair six-sided die?",
     correct_answer: "1/6",
     options: ["1/6", "1/3", "1/2", "2/3"],
   },
   {
-    index: 2,
+    index: 383,
     question:
       "If you flip a fair coin twice, what is the probability of getting heads on both flips?",
     correct_answer: "1/4",
     options: ["1/4", "1/2", "3/4", "1/3"],
   },
   {
-    index: 3,
+    index: 384,
     question:
       "A bag contains 5 red marbles and 3 blue marbles. What is the probability of drawing a red marble?",
     correct_answer: "5/8",
     options: ["5/8", "3/8", "2/5", "3/5"],
   },
   {
-    index: 4,
+    index: 385,
     question:
       "If you roll two fair six-sided dice, what is the probability of rolling a sum of 7?",
     correct_answer: "1/6",
     options: ["1/6", "1/3", "1/4", "1/12"],
   },
   {
-    index: 5,
+    index: 386,
     question:
       "In a deck of 52 playing cards, what is the probability of drawing a heart?",
     correct_answer: "1/4",
     options: ["1/4", "1/13", "1/2", "1/26"],
   },
   {
-    index: 6,
+    index: 387,
     question:
       "If you randomly select a letter from the word 'MATHEMATICS', what is the probability that it is a vowel?",
     correct_answer: "4/11",
     options: ["4/11", "3/11", "2/11", "1/11"],
   },
   {
-    index: 7,
+    index: 388,
     question:
       "You have a jar with 10 red marbles, 6 blue marbles, and 4 green marbles. What is the probability of drawing a blue marble?",
     correct_answer: "3/10",
     options: ["3/10", "3/20", "2/5", "3/5"],
   },
   {
-    index: 8,
+    index: 389,
     question:
       "If you flip a fair coin three times, what is the probability of getting at least one head?",
     correct_answer: "7/8",
     options: ["7/8", "1/8", "3/4", "1/2"],
   },
   {
-    index: 9,
+    index: 390,
     question:
       "A box contains 8 black balls and 4 white balls. If you draw one ball at random, what is the probability of drawing a black ball?",
     correct_answer: "2/3",
     options: ["2/3", "1/3", "3/4", "1/2"],
   },
   {
-    index: 10,
+    index: 391,
     question:
       "If you roll a fair six-sided die, what is the probability of rolling a number greater than 4?",
     correct_answer: "1/3",
     options: ["1/3", "1/2", "2/3", "1/6"],
   },
   {
-    index: 11,
+    index: 392,
     question:
       "You have a bag with 12 candies: 6 are chocolate, 4 are strawberry, and 2 are vanilla. What is the probability of randomly selecting a strawberry candy?",
     correct_answer: "1/3",
     options: ["1/3", "2/3", "1/6", "2/5"],
   },
   {
-    index: 12,
+    index: 393,
     question:
       "If you randomly pick a card from a standard deck of 52 playing cards, what is the probability of selecting a face card (jack, queen, or king)?",
     correct_answer: "3/13",
     options: ["3/13", "1/3", "3/52", "3/26"],
   },
   {
-    index: 13,
+    index: 394,
     question:
       "In a group of 30 students, 18 are girls and 12 are boys. If a student is selected at random, what is the probability that it is a girl?",
     correct_answer: "3/5",
     options: ["3/5", "2/5", "3/10", "2/3"],
   },
   {
-    index: 14,
+    index: 395,
     question:
       "You have a box with 6 blue balls, 4 green balls, and 2 red balls. If you randomly select a ball, what is the probability of selecting a green ball?",
     correct_answer: "2/6",
     options: ["2/6", "1/6", "1/2", "2/5"],
   },
   {
-    index: 15,
+    index: 396,
     question:
       "If you roll two fair six-sided dice, what is the probability that the sum of the numbers rolled is 8?",
     correct_answer: "5/36",
     options: ["5/36", "1/6", "1/12", "1/4"],
   },
   {
-    index: 16,
+    index: 397,
     question:
       "A bag contains 5 red balls, 3 blue balls, and 2 green balls. If you draw one ball at random, what is the probability that it is not blue?",
     correct_answer: "7/10",
     options: ["7/10", "1/10", "3/10", "2/5"],
   },
   {
-    index: 17,
+    index: 398,
     question:
       "You have a standard deck of 52 playing cards. What is the probability of drawing a spade or a heart?",
     correct_answer: "1/2",
     options: ["1/2", "1/4", "3/4", "1/3"],
   },
   {
-    index: 18,
+    index: 399,
     question:
       "If you flip a fair coin three times, what is the probability of getting exactly two heads?",
     correct_answer: "3/8",
     options: ["3/8", "1/8", "1/2", "1/4"],
   },
   {
-    index: 19,
+    index: 400,
     question:
       "In a group of 50 students, 30 are girls and 20 are boys. If a student is selected at random, what is the probability that it is a boy?",
     correct_answer: "2/5",
     options: ["2/5", "3/5", "1/2", "3/10"],
   },
   {
-    index: 20,
+    index: 401,
     question:
       "You have a bag with 8 red marbles, 4 blue marbles, and 2 green marbles. What is the probability of drawing a red marble?",
     correct_answer: "2/7",
     options: ["2/7", "4/7", "2/9", "3/5"],
   },
   {
-    index: 21,
+    index: 402,
     question:
       "If you roll two fair six-sided dice, what is the probability that the sum of the numbers rolled is greater than 9?",
     correct_answer: "5/36",
     options: ["5/36", "1/6", "1/12", "1/4"],
   },
   {
-    index: 22,
+    index: 403,
     question:
       "A box contains 6 black balls and 4 white balls. If you draw one ball at random, what is the probability of drawing a white ball?",
     correct_answer: "2/5",
     options: ["2/5", "1/5", "4/10", "3/10"],
   },
   {
-    index: 23,
+    index: 404,
     question:
       "If you randomly select a letter from the word 'PROBABILITY', what is the probability that it is a consonant?",
     correct_answer: "9/11",
     options: ["9/11", "2/11", "1/11", "3/11"],
   },
   {
-    index: 24,
+    index: 405,
     question:
       "You have a jar with 12 red marbles, 7 blue marbles, and 5 green marbles. What is the probability of drawing a blue marble?",
     correct_answer: "7/24",
     options: ["7/24", "5/12", "7/12", "12/24"],
   },
   {
-    index: 25,
+    index: 406,
     question:
       "If you flip a fair coin three times, what is the probability of getting exactly one head?",
     correct_answer: "3/8",
     options: ["3/8", "1/8", "1/2", "1/4"],
   },
   {
-    index: 26,
+    index: 407,
     question:
       "In a box of 20 candies, 12 are chocolate, 5 are strawberry, and 3 are vanilla. What is the probability of randomly selecting a chocolate candy?",
     correct_answer: "3/5",
     options: ["3/5", "5/12", "12/20", "15/20"],
   },
   {
-    index: 27,
+    index: 408,
     question:
       "You have a deck of 52 playing cards. What is the probability of drawing a face card (jack, queen, or king) or a spade?",
     correct_answer: "4/13",
     options: ["4/13", "1/3", "1/13", "3/13"],
   },
   {
-    index: 28,
+    index: 409,
     question:
       "If you roll a fair six-sided die, what is the probability of rolling a number less than 3?",
     correct_answer: "1/3",
     options: ["1/3", "1/2", "2/3", "1/6"],
   },
   {
-    index: 29,
+    index: 410,
     question:
       "A bag contains 8 red balls, 5 blue balls, and 3 green balls. If you draw one ball at random, what is the probability that it is blue or green?",
     correct_answer: "4/8",
     options: ["4/8", "5/8", "3/8", "8/16"],
   },
   {
-    index: 30,
+    index: 411,
     question:
       "You have a box with 10 black marbles, 6 white marbles, and 4 gray marbles. What is the probability of drawing a white marble?",
     correct_answer: "3/10",
     options: ["3/10", "1/5", "6/20", "4/10"],
   },
   {
-    index: 31,
+    index: 412,
     question:
       "If you flip a fair coin three times, what is the probability of getting exactly three heads?",
     correct_answer: "1/8",
     options: ["1/8", "1/3", "1/4", "1/2"],
   },
   {
-    index: 32,
+    index: 413,
     question:
       "A bag contains 6 red balls and 4 blue balls. If you draw one ball at random, what is the probability of drawing a red ball?",
     correct_answer: "3/5",
     options: ["3/5", "2/5", "6/10", "4/10"],
   },
   {
-    index: 33,
+    index: 414,
     question:
       "You have a jar with 10 black marbles, 7 white marbles, and 3 green marbles. What is the probability of drawing a marble that is not green?",
     correct_answer: "17/20",
     options: ["17/20", "3/20", "7/20", "10/20"],
   },
   {
-    index: 34,
+    index: 415,
     question:
       "If you roll two fair six-sided dice, what is the probability that the sum of the numbers rolled is less than 5?",
     correct_answer: "4/36",
     options: ["4/36", "1/6", "1/12", "1/4"],
   },
   {
-    index: 35,
+    index: 416,
     question:
       "A box contains 8 black balls and 2 white balls. If you draw one ball at random, what is the probability of drawing a black ball?",
     correct_answer: "4/5",
     options: ["4/5", "1/5", "2/10", "8/10"],
   },
   {
-    index: 36,
+    index: 417,
     question:
       "If you roll a fair six-sided die, what is the probability of rolling a prime number?",
     correct_answer: "1/2",
     options: ["1/2", "1/3", "2/3", "1/6"],
   },
   {
-    index: 37,
+    index: 418,
     question:
       "You have a bag with 6 red marbles, 3 blue marbles, and 1 green marble. What is the probability of drawing a blue or green marble?",
     correct_answer: "4/10",
     options: ["4/10", "3/10", "7/10", "1/10"],
   },
   {
-    index: 38,
+    index: 419,
     question:
       "If you flip a fair coin three times, what is the probability of getting at least two heads?",
     correct_answer: "7/8",
     options: ["7/8", "1/8", "3/4", "1/2"],
   },
   {
-    index: 39,
+    index: 420,
     question:
       "In a group of 40 students, 25 are girls and 15 are boys. If a student is selected at random, what is the probability that it is a girl?",
     correct_answer: "5/8",
     options: ["5/8", "3/8", "1/2", "2/5"],
   },
   {
-    index: 40,
+    index: 421,
     question:
       "You have a box with 12 black marbles, 7 white marbles, and 3 gray marbles. What is the probability of drawing a white or gray marble?",
     correct_answer: "1/4",
     options: ["1/4", "1/3", "1/2", "2/3"],
   },
   {
-    index: 41,
+    index: 422,
     question:
       "If you roll two fair six-sided dice, what is the probability that the sum of the numbers rolled is greater than 7?",
     correct_answer: "15/36",
     options: ["15/36", "1/6", "1/12", "1/4"],
   },
   {
-    index: 42,
+    index: 423,
     question:
       "A box contains 5 red balls, 3 blue balls, and 2 green balls. If you draw one ball at random, what is the probability that it is not blue?",
     correct_answer: "7/10",
     options: ["7/10", "1/10", "3/10", "2/5"],
   },
   {
-    index: 43,
+    index: 424,
     question:
       "You have a jar with 10 red marbles, 6 blue marbles, and 4 green marbles. What is the probability of drawing a blue marble?",
     correct_answer: "3/10",
     options: ["3/10", "3/20", "2/5", "3/5"],
   },
   {
-    index: 44,
+    index: 425,
     question:
       "If you flip a fair coin three times, what is the probability of getting exactly one tail?",
     correct_answer: "3/8",
     options: ["3/8", "1/8", "1/2", "1/4"],
   },
   {
-    index: 45,
+    index: 426,
     question:
       "A bag contains 8 red balls, 4 blue balls, and 2 green balls. If you draw one ball at random, what is the probability that it is green?",
     correct_answer: "1/7",
     options: ["1/7", "2/7", "1/5", "3/7"],
   },
   {
-    index: 46,
+    index: 427,
     question:
       "If you randomly select a letter from the word 'PROBABILITY', what is the probability that it is a consonant?",
     correct_answer: "9/11",
     options: ["9/11", "2/11", "1/11", "3/11"],
   },
   {
-    index: 47,
+    index: 428,
     question:
       "You have a jar with 12 red marbles, 7 blue marbles, and 5 green marbles. What is the probability of drawing a blue marble?",
     correct_answer: "7/24",
     options: ["7/24", "5/12", "7/12", "12/24"],
   },
   {
-    index: 48,
+    index: 429,
     question:
       "If you flip a fair coin three times, what is the probability of getting exactly one head?",
     correct_answer: "3/8",
     options: ["3/8", "1/8", "1/2", "1/4"],
   },
   {
-    index: 49,
+    index: 430,
     question:
       "A box contains 6 black balls and 4 white balls. If you draw one ball at random, what is the probability of drawing a white ball?",
     correct_answer: "2/5",
     options: ["2/5", "1/5", "4/10", "3/10"],
   },
   {
-    index: 50,
+    index: 431,
     question:
       "If you roll a fair six-sided die, what is the probability of rolling a prime number?",
     correct_answer: "1/2",
     options: ["1/2", "1/3", "2/3", "1/6"],
   },
   {
-    index: 1,
+    index: 432,
     question:
       "What is the mean of the following set of numbers: 2, 4, 6, 8, 10?",
     correct_answer: "6",
     options: ["6", "5", "7", "8"],
   },
   {
-    index: 2,
+    index: 433,
     question:
       "Find the median of the following set of numbers: 3, 7, 1, 8, 9, 2.",
     correct_answer: "5",
     options: ["3", "5", "7", "8"],
   },
   {
-    index: 3,
+    index: 434,
     question:
       "What is the mode of the following set of numbers: 4, 2, 4, 7, 5, 4, 3, 4?",
     correct_answer: "4",
     options: ["2", "3", "4", "5"],
   },
   {
-    index: 4,
+    index: 435,
     question:
       "Find the range of the following set of numbers: 15, 20, 25, 30, 35.",
     correct_answer: "20",
     options: ["15", "20", "25", "30"],
   },
   {
-    index: 5,
+    index: 436,
     question: "Calculate the mean of the numbers 12, 15, 18, 21, 24, 27, 30.",
     correct_answer: "21",
     options: ["18", "21", "24", "27"],
   },
   {
-    index: 6,
+    index: 437,
     question:
       "What is the median of the following set of numbers: 5, 7, 9, 11, 13, 15, 17?",
     correct_answer: "11",
     options: ["9", "11", "13", "15"],
   },
   {
-    index: 7,
+    index: 438,
     question:
       "Find the mode of the following set of numbers: 3, 7, 3, 9, 3, 5, 7, 9, 9, 11.",
     correct_answer: "3 and 9",
     options: ["3 and 7", "7 and 9", "3 and 9", "5 and 11"],
   },
   {
-    index: 8,
+    index: 439,
     question:
       "What is the range of the following set of numbers: 22, 25, 28, 31, 34, 37, 40?",
     correct_answer: "18",
     options: ["22", "25", "28", "18"],
   },
   {
-    index: 9,
+    index: 440,
     question:
       "Calculate the mean of the numbers 5, 10, 15, 20, 25, 30, 35, 40.",
     correct_answer: "22.5",
     options: ["20", "22.5", "25", "30"],
   },
   {
-    index: 10,
+    index: 441,
     question:
       "Find the median of the following set of numbers: 4, 8, 2, 10, 6, 12, 14.",
     correct_answer: "8",
     options: ["6", "8", "10", "12"],
   },
   {
-    index: 11,
+    index: 442,
     question:
       "What is the mode of the following set of numbers: 2, 4, 6, 8, 10?",
     correct_answer: "No mode",
     options: ["2", "4", "6", "No mode"],
   },
   {
-    index: 12,
+    index: 443,
     question:
       "Find the range of the following set of numbers: 8, 15, 22, 29, 36.",
     correct_answer: "28",
     options: ["8", "15", "22", "28"],
   },
   {
-    index: 13,
+    index: 444,
     question: "Calculate the mean of the numbers 3, 6, 9, 12, 15, 18, 21.",
     correct_answer: "12",
     options: ["9", "12", "15", "18"],
   },
   {
-    index: 14,
+    index: 445,
     question:
       "What is the median of the following set of numbers: 11, 12, 14, 15, 17, 19?",
     correct_answer: "14.5",
     options: ["14", "14.5", "15", "17"],
   },
   {
-    index: 15,
+    index: 446,
     question:
       "Find the mode of the following set of numbers: 2, 4, 6, 4, 8, 10, 4.",
     correct_answer: "4",
     options: ["2", "4", "6", "8"],
   },
   {
-    index: 16,
+    index: 447,
     question:
       "What is the range of the following set of numbers: 17, 21, 25, 29, 33, 37, 41?",
     correct_answer: "24",
     options: ["17", "21", "24", "29"],
   },
   {
-    index: 17,
+    index: 448,
     question: "Calculate the mean of the numbers 2, 4, 6, 8, 10, 12, 14, 16.",
     correct_answer: "9",
     options: ["8", "9", "10", "12"],
   },
   {
-    index: 18,
+    index: 449,
     question:
       "What is the median of the following set of numbers: 5, 6, 10, 12, 14, 16, 18?",
     correct_answer: "11",
     options: ["10", "11", "12", "14"],
   },
   {
-    index: 19,
+    index: 450,
     question:
       "Find the mode of the following set of numbers: 3, 5, 7, 5, 9, 5, 11, 13.",
     correct_answer: "5",
     options: ["3", "5", "7", "9"],
   },
   {
-    index: 20,
+    index: 451,
     question:
       "What is the range of the following set of numbers: 10, 15, 20, 25, 30, 35, 40, 45?",
     correct_answer: "35",
     options: ["25", "30", "35", "40"],
   },
   {
-    index: 21,
+    index: 452,
     question:
       "Calculate the mean of the numbers 2, 5, 8, 11, 14, 17, 20, 23, 26.",
     correct_answer: "14.5",
     options: ["11", "14.5", "17", "20"],
   },
   {
-    index: 22,
+    index: 453,
     question:
       "What is the median of the following set of numbers: 8, 12, 6, 14, 16, 10, 4, 18?",
     correct_answer: "11",
     options: ["10", "11", "12", "14"],
   },
   {
-    index: 23,
+    index: 454,
     question:
       "Find the mode of the following set of numbers: 2, 4, 6, 8, 10, 2, 4.",
     correct_answer: "2 and 4",
     options: ["2 and 6", "4 and 8", "2 and 4", "6 and 10"],
   },
   {
-    index: 1,
+    index: 455,
     question:
       "In a right triangle, if one leg has length 5 and the other leg has length 12, what is the length of the hypotenuse?",
     correct_answer: "13",
     options: ["10", "12", "13", "15"],
   },
   {
-    index: 2,
+    index: 456,
     question:
       "A right triangle has legs of length 6 and 8. What is the length of the hypotenuse?",
     correct_answer: "10",
     options: ["6", "8", "10", "12"],
   },
   {
-    index: 3,
+    index: 457,
     question:
       "If a right triangle has a hypotenuse of length 10 and one leg of length 6, what is the length of the other leg?",
     correct_answer: "8",
     options: ["6", "8", "10", "12"],
   },
   {
-    index: 4,
+    index: 458,
     question:
       "In a right triangle, if one leg has length 9 and the hypotenuse has length 15, what is the length of the other leg?",
     correct_answer: "12",
     options: ["9", "12", "15", "18"],
   },
   {
-    index: 5,
+    index: 459,
     question:
       "A right triangle has legs of length 5 and 12. What is the length of the hypotenuse?",
     correct_answer: "13",
     options: ["10", "12", "13", "15"],
   },
   {
-    index: 6,
+    index: 460,
     question:
       "If a right triangle has a hypotenuse of length 17 and one leg of length 8, what is the length of the other leg?",
     correct_answer: "15",
     options: ["8", "15", "17", "19"],
   },
   {
-    index: 7,
+    index: 461,
     question:
       "In a right triangle, if one leg has length 7 and the other leg has length 24, what is the length of the hypotenuse?",
     correct_answer: "25",
     options: ["21", "24", "25", "28"],
   },
   {
-    index: 8,
+    index: 462,
     question:
       "A right triangle has legs of length 9 and 12. What is the length of the hypotenuse?",
     correct_answer: "15",
     options: ["9", "12", "15", "18"],
   },
   {
-    index: 9,
+    index: 463,
     question:
       "If a right triangle has a hypotenuse of length 26 and one leg of length 10, what is the length of the other leg?",
     correct_answer: "24",
     options: ["10", "24", "26", "28"],
   },
   {
-    index: 10,
+    index: 464,
     question:
       "In a right triangle, if one leg has length 15 and the hypotenuse has length 17, what is the length of the other leg?",
     correct_answer: "8",
     options: ["15", "8", "17", "19"],
   },
   {
-    index: 11,
+    index: 465,
     question:
       "A right triangle has legs of length 7 and 24. What is the length of the hypotenuse?",
     correct_answer: "25",
     options: ["21", "24", "25", "28"],
   },
   {
-    index: 12,
+    index: 466,
     question:
       "If a right triangle has a hypotenuse of length 29 and one leg of length 20, what is the length of the other leg?",
     correct_answer: "21",
     options: ["20", "21", "29", "31"],
   },
   {
-    index: 13,
+    index: 467,
     question:
       "In a right triangle, if one leg has length 8 and the other leg has length 15, what is the length of the hypotenuse?",
     correct_answer: "17",
     options: ["13", "15", "17", "19"],
   },
   {
-    index: 14,
+    index: 468,
     question:
       "A right triangle has legs of length 10 and 24. What is the length of the hypotenuse?",
     correct_answer: "26",
     options: ["20", "24", "26", "28"],
   },
   {
-    index: 15,
+    index: 469,
     question:
       "If a right triangle has a hypotenuse of length 34 and one leg of length 16, what is the length of the other leg?",
     correct_answer: "30",
     options: ["16", "30", "34", "38"],
   },
   {
-    index: 16,
+    index: 470,
     question:
       "In a right triangle, if one leg has length 9 and the other leg has length 40, what is the length of the hypotenuse?",
     correct_answer: "41",
     options: ["39", "40", "41", "42"],
   },
   {
-    index: 17,
+    index: 471,
     question:
       "A right triangle has legs of length 12 and 35. What is the length of the hypotenuse?",
     correct_answer: "37",
     options: ["34", "35", "37", "38"],
   },
   {
-    index: 18,
+    index: 472,
     question:
       "If a right triangle has a hypotenuse of length 41 and one leg of length 9, what is the length of the other leg?",
     correct_answer: "40",
     options: ["39", "40", "41", "42"],
   },
   {
-    index: 19,
+    index: 473,
     question:
       "In a right triangle, if one leg has length 15 and the other leg has length 36, what is the length of the hypotenuse?",
     correct_answer: "39",
     options: ["36", "39", "42", "45"],
   },
   {
-    index: 20,
+    index: 474,
     question:
       "A right triangle has legs of length 16 and 63. What is the length of the hypotenuse?",
     correct_answer: "65",
     options: ["62", "63", "65", "66"],
   },
   {
-    index: 21,
+    index: 475,
     question:
       "If a right triangle has a hypotenuse of length 50 and one leg of length 24, what is the length of the other leg?",
     correct_answer: "26",
     options: ["24", "26", "48", "50"],
   },
   {
-    index: 22,
+    index: 476,
     question:
       "In a right triangle, if one leg has length 17 and the other leg has length 144, what is the length of the hypotenuse?",
     correct_answer: "145",
     options: ["143", "144", "145", "146"],
   },
   {
-    index: 23,
+    index: 477,
     question:
       "A right triangle has legs of length 18 and 80. What is the length of the hypotenuse?",
     correct_answer: "82",
     options: ["79", "80", "82", "84"],
   },
   {
-    index: 24,
+    index: 478,
     question:
       "If a right triangle has a hypotenuse of length 85 and one leg of length 36, what is the length of the other leg?",
     correct_answer: "77",
     options: ["36", "77", "85", "121"],
   },
   {
-    index: 25,
+    index: 479,
     question:
       "In a right triangle, if one leg has length 19 and the other leg has length 180, what is the length of the hypotenuse?",
     correct_answer: "181",
     options: ["179", "180", "181", "182"],
   },
   {
-    index: 26,
+    index: 480,
     question:
       "A right triangle has legs of length 20 and 99. What is the length of the hypotenuse?",
     correct_answer: "101",
     options: ["98", "99", "101", "102"],
   },
   {
-    index: 27,
+    index: 481,
     question:
       "If a right triangle has a hypotenuse of length 100 and one leg of length 48, what is the length of the other leg?",
     correct_answer: "64",
     options: ["48", "64", "100", "148"],
   },
   {
-    index: 28,
+    index: 482,
     question:
       "In a right triangle, if one leg has length 21 and the other leg has length 220, what is the length of the hypotenuse?",
     correct_answer: "221",
     options: ["219", "220", "221", "222"],
   },
   {
-    index: 29,
+    index: 483,
     question:
       "A right triangle has legs of length 22 and 120. What is the length of the hypotenuse?",
     correct_answer: "122",
     options: ["119", "120", "122", "124"],
   },
   {
-    index: 30,
+    index: 484,
     question:
       "If a right triangle has a hypotenuse of length 125 and one leg of length 60, what is the length of the other leg?",
     correct_answer: "115",
     options: ["60", "115", "125", "185"],
   },
   {
-    index: 31,
+    index: 485,
     question:
       "In a right triangle, if one leg has length 23 and the other leg has length 264, what is the length of the hypotenuse?",
     correct_answer: "265",
     options: ["263", "264", "265", "266"],
   },
   {
-    index: 32,
+    index: 486,
     question:
       "A right triangle has legs of length 24 and 143. What is the length of the hypotenuse?",
     correct_answer: "145",
     options: ["141", "143", "145", "147"],
   },
   {
-    index: 33,
+    index: 487,
     question:
       "If a right triangle has a hypotenuse of length 150 and one leg of length 72, what is the length of the other leg?",
     correct_answer: "138",
     options: ["72", "138", "150", "222"],
   },
   {
-    index: 34,
+    index: 488,
     question:
       "In a right triangle, if one leg has length 25 and the other leg has length 312, what is the length of the hypotenuse?",
     correct_answer: "313",
     options: ["311", "312", "313", "314"],
   },
   {
-    index: 35,
+    index: 489,
     question:
       "A right triangle has legs of length 26 and 168. What is the length of the hypotenuse?",
     correct_answer: "170",
     options: ["166", "168", "170", "172"],
   },
   {
-    index: 36,
+    index: 490,
     question:
       "If a right triangle has a hypotenuse of length 175 and one leg of length 84, what is the length of the other leg?",
     correct_answer: "161",
     options: ["84", "161", "175", "259"],
   },
   {
-    index: 37,
+    index: 491,
     question:
       "In a right triangle, if one leg has length 27 and the other leg has length 364, what is the length of the hypotenuse?",
     correct_answer: "365",
     options: ["363", "364", "365", "366"],
   },
   {
-    index: 38,
+    index: 492,
     question:
       "A right triangle has legs of length 28 and 195. What is the length of the hypotenuse?",
     correct_answer: "197",
     options: ["193", "195", "197", "199"],
   },
   {
-    index: 39,
+    index: 493,
     question:
       "If a right triangle has a hypotenuse of length 200 and one leg of length 96, what is the length of the other leg?",
     correct_answer: "164",
     options: ["96", "164", "200", "296"],
   },
   {
-    index: 40,
+    index: 494,
     question:
       "In a right triangle, if one leg has length 29 and the other leg has length 420, what is the length of the hypotenuse?",
     correct_answer: "421",
     options: ["419", "420", "421", "422"],
   },
   {
-    index: 41,
+    index: 495,
     question:
       "A right triangle has legs of length 30 and 221. What is the length of the hypotenuse?",
     correct_answer: "221",
     options: ["217", "221", "225", "229"],
   },
   {
-    index: 42,
+    index: 496,
     question:
       "If a right triangle has a hypotenuse of length 250 and one leg of length 120, what is the length of the other leg?",
     correct_answer: "230",
     options: ["120", "230", "250", "370"],
   },
   {
-    index: 43,
+    index: 497,
     question:
       "In a right triangle, if one leg has length 31 and the other leg has length 480, what is the length of the hypotenuse?",
     correct_answer: "481",
     options: ["479", "480", "481", "482"],
   },
   {
-    index: 44,
+    index: 498,
     question:
       "A right triangle has legs of length 32 and 255. What is the length of the hypotenuse?",
     correct_answer: "257",
     options: ["253", "255", "257", "259"],
   },
   {
-    index: 45,
+    index: 499,
     question:
       "If a right triangle has a hypotenuse of length 260 and one leg of length 126, what is the length of the other leg?",
     correct_answer: "238",
     options: ["126", "238", "260", "386"],
   },
   {
-    index: 46,
+    index: 500,
     question:
       "In a right triangle, if one leg has length 33 and the other leg has length 544, what is the length of the hypotenuse?",
     correct_answer: "545",
