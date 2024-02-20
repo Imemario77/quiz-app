@@ -56,7 +56,7 @@
   overflow: hidden;
   border: 8px solid var(--white-color);
   border-top: 8px solid var(--main-color);
-  animation: loader 1s linear 2;
+  animation: loader 1s linear 1;
 }
 
 @keyframes loader {
