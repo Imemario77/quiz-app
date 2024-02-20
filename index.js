@@ -13,6 +13,8 @@ const register_name = document.querySelector(".register-name");
 const save_name = document.querySelector(".save-name");
 const user_name = document.querySelector(".username");
 const user_name_display = document.querySelector(".display-username");
+const search_input = document.querySelector("#search-input");
+const subject_click_box = document.querySelectorAll(".exam");
 
 let hour_time = 0;
 let min_time = 0;
@@ -98,4 +100,17 @@ if (!localStorage.getItem("username")) {
     ? (user_name_display.innerHTML = localStorage.getItem("username"))
     : null;
   register_name ? (register_name.style.display = "none") : null;
+}
+
+function searchItem() {
+  subject_click_box.forEach((box) => {
+    box.classList.remove("b-m-c");
+    const id_attr = box.getAttribute("id");
+    if (id_attr.toLowerCase().startsWith(search_input.value.toLowerCase())) {
+      box.scrollIntoView({
+        behavior: "smooth",
+      });
+      box.classList.add("b-m-c")
+    }
+  });
 }

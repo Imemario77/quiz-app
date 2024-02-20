@@ -21,6 +21,10 @@
   border: 5px solid gold;
 }
 
+.b-m-c {
+  border: 5px solid var(--main-color);
+}
+
 .fixed {
   position: fixed;
 }

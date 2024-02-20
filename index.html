@@ -22,37 +22,37 @@
             </div>
             <div>
                 <i style="font-size: 25px;" class="fa fa-search search-btn"></i>
-                <input placeholder="Search" type="search">
+                <input id="search-input" onchange="searchItem()" placeholder="Search" type="search">
             </div>
         </section>
         <section class="choose-exam-section">
             <h3>Explore categories</h3>
             <section class="choose-exam-container">
-                <div onclick="startTest('chemistry')" class="exam">
+                <div id="chemistry" onclick="startTest('chemistry')" class="exam">
                     <img src="images/chemistry.png" width="150" height="150" alt="">
                     <p>Chemistry</p>
                 </div>
-                <div onclick="startTest('Biology')" class="exam">
+                <div id="Biology" onclick="startTest('Biology')" class="exam">
                     <img src="images/bacteria.png" width="150" height="150" alt="">
                     <p>Biology</p>
                 </div>
-                <div onclick="startTest('Physics')" class="exam">
+                <div id="Physics" onclick="startTest('Physics')" class="exam">
                     <img src="images/transverse-wave.png" alt="">
                     <p>Physics</p>
                 </div>
-                <div onclick="startTest('History')" class="exam">
+                <div id="History" onclick="startTest('History')" class="exam">
                     <img src="images/history.png" alt="">
                     <p>History</p>
                 </div>
-                <div onclick="startTest('Mathematics')" class="exam">
+                <div id="Mathematics" onclick="startTest('Mathematics')" class="exam">
                     <img src="images/calculator.png" alt="">
                     <p>Mathematics</p>
                 </div>
-                <div onclick="startTest('English')" class="exam">
+                <div id="English" onclick="startTest('English')" class="exam">
                     <img src="images/book.png" alt="">
                     <p>English</p>
                 </div>
-                <div onclick="startTest('Literature')" class="exam">
+                <div id="Literature" onclick="startTest('Literature')" class="exam">
                     <img src="images/books.png" alt="">
                     <p>Literature</p>
                 </div>
