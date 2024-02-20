@@ -1,4 +1,3 @@
-const quit_test = document.querySelector(".fa-arrow-left");
 const question_start_number = document.querySelector("#question-start-number");
 const question_total_number = document.querySelector("#question-total-number");
 const q_time = document.querySelector("#q-time");
@@ -68,7 +67,7 @@ if (
     if (timeRemaining < 0) {
       q_time.innerHTML = `<i class='fa fa-clock-o' style='padding-right: 5px;'> 00:00:00</i>`;
       clearInterval(countdown);
-      submit_test.click()
+      submit_test.click();
       const name = localStorage.getItem("username");
       localStorage.clear();
       localStorage.setItem("username", name);
@@ -83,17 +82,6 @@ if (
 } else {
   window.location = window.location.href.replace("question", "index");
 }
-
-quit_test &&
-  quit_test.addEventListener("click", () => {
-    const ans = confirm("are you ready to quit this test");
-    if (ans) {
-      const name = localStorage.getItem("username");
-      localStorage.clear();
-      localStorage.setItem("username", name);
-      window.location = window.location.href.replace("question", "index");
-    }
-  });
 
 if (question_total_number)
   question_total_number.innerHTML = localStorage.getItem("question-count");
@@ -189,7 +177,9 @@ submit_test.addEventListener("click", () => {
       subject: localStorage.getItem("subject"),
       data: answer_list,
       question: questions_list,
+      date: new Date().toDateString(),
     },
     "history"
   );
+  window.location = window.location.href.replace("question", "score");
 });

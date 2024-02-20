@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <title>Score</title>
+</head>
+
+<body>
+    <main id="hero">
+        <div class="loader">
+            <div id="scale"></div>,
+        </div>
+        <section class="go-back-to-home">
+            <i class="fa fa-arrow-left"></i>
+            <p>View Score</p>
+            <span class="taken-date"></span>
+        </section>
+        <section class="question-container page-padding">
+            <div class="fixed sub-title">
+                <h3 class="subject-title">Loading........</h3>
+                <div class="pass-fail">
+                    <span id="pass">pass: 10/50</span>
+                    <span id="fail">fail: 40/50</span>
+                </div>
+            </div>
+            <div class="all-questions">
+
+            </div>
+        </section>
+    </main>
+    <script src="db.js"></script>
+    <script src="math.js"></script>
+    <script src="index.js"></script>
+    <script src="score.js"></script>
+</body>
+
+</html>

@@ -12,6 +12,15 @@
   color: var(--white-color);
 }
 
+.wrong {
+  background-color: red !important;
+  color: var(--white-color);
+}
+
+.b-w {
+  border: 5px solid gold;
+}
+
 .fixed {
   position: fixed;
 }

@@ -28,6 +28,31 @@ request.onupgradeneeded = function (event) {
   });
 };
 
+// Assuming db is your IndexedDB database instance and storeName is the name of your object store
+function getLastInsertedItem(storeName) {
+  const transaction = db.transaction([storeName], "readonly");
+  const objectStore = transaction.objectStore(storeName);
+
+  const request = objectStore.openCursor(null, "prev"); // Opening cursor in reverse order
+
+  return new Promise((resolve, reject) => {
+    request.onsuccess = function (event) {
+      const cursor = event.target.result;
+      if (cursor) {
+        // Cursor points to the last item inserted
+        resolve(cursor.value);
+      } else {
+        // No items found
+        resolve(null);
+      }
+    };
+
+    request.onerror = function (event) {
+      reject(event.target.error);
+    };
+  });
+}
+
 function saveToIndexedDB(data, storeName) {
   const transaction = db.transaction([storeName], "readwrite");
   const objectStore = transaction.objectStore(storeName);
