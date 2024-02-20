@@ -6,12 +6,14 @@ const subject_title = document.querySelector(".subject-title");
 const question_box = document.querySelector(".all-questions");
 const range_slider = document.querySelector(".range-slider");
 const submit_test = document.querySelector(".submit-test");
+let questions_list;
+let answer_list;
 
 if (localStorage.getItem("subject")) {
   subject_title.innerHTML = localStorage.getItem("subject") + " Test";
 }
 
-subject_questions = math
+subject_questions = math;
 
 if (
   localStorage.getItem("hour") ||
@@ -66,20 +68,30 @@ if (
     if (timeRemaining < 0) {
       q_time.innerHTML = `<i class='fa fa-clock-o' style='padding-right: 5px;'> 00:00:00</i>`;
       clearInterval(countdown);
+      submit_test.click()
+      const name = localStorage.getItem("username");
       localStorage.clear();
+      localStorage.setItem("username", name);
     }
   }, 1000);
+  questions_list = localStorage.getItem("question-list")
+    ? JSON.parse(localStorage.getItem("question-list"))
+    : [];
+  answer_list = localStorage.getItem("ans")
+    ? JSON.parse(localStorage.getItem("ans"))
+    : [];
 } else {
-  window.history.back();
+  window.location = window.location.href.replace("question", "index");
 }
 
 quit_test &&
   quit_test.addEventListener("click", () => {
     const ans = confirm("are you ready to quit this test");
     if (ans) {
+      const name = localStorage.getItem("username");
       localStorage.clear();
-      window.history.back();
-      //   window.location = window.location.href;
+      localStorage.setItem("username", name);
+      window.location = window.location.href.replace("question", "index");
     }
   });
 
@@ -92,24 +104,28 @@ if (question_total_number)
 
 // console.log(res);
 
-const questions_list = [];
-let answer_list = [];
-
-for (let index = 0; index < 1000; index++) {
-  let i = Math.floor(Math.random() * 381);
-  let ques = subject_questions[i];
-  if (!questions_list.includes(ques)) {
-    questions_list.push(ques);
+if (questions_list.length <= 0) {
+  for (let index = 0; index < 1000; index++) {
+    let i = Math.floor(Math.random() * 381);
+    let ques = subject_questions[i];
+    if (!questions_list.includes(ques)) {
+      questions_list.push(ques);
+    }
+    if (
+      questions_list.length >= parseInt(localStorage.getItem("question-count"))
+    )
+      break;
   }
-  if (questions_list.length >= parseInt(localStorage.getItem("question-count")))
-    break;
 }
+
+localStorage.setItem("question-list", JSON.stringify(questions_list));
 
 question_box.innerHTML = "";
 
 questions_list.map((question, index) => {
   const single_question = document.createElement("div");
   single_question.setAttribute("class", "single-question");
+  single_question.setAttribute("id", `n-${question.index}`);
   const h4 = document.createElement("h4");
   h4.innerText = `Question - ${parseInt(index) + 1}`;
   single_question.append(h4);
@@ -122,13 +138,21 @@ questions_list.map((question, index) => {
       "onclick",
       `chooseOption(${parseInt(index)},${
         question.index
-      },'${option}',${btn_number})`
+      },"${option}",${btn_number})`
     );
     span.innerText = option;
     single_question.append(span);
   });
   question_box.append(single_question);
 });
+
+if (answer_list.length > 0) {
+  answer_list.forEach((element) => {
+    console.log(element);
+    const item = document.querySelector(`#n-${element.index}`);
+    item.childNodes[element.btn_number + 2].setAttribute("class", "answered");
+  });
+}
 
 function chooseOption(question_number, index, answer, btn_number) {
   if (answer_list.some((item) => item.index === index)) {
@@ -149,11 +173,23 @@ function chooseOption(question_number, index, answer, btn_number) {
     (answer_list.length / parseInt(localStorage.getItem("question-count"))) *
       100
   )}%`;
+  localStorage.setItem("ans", JSON.stringify(answer_list));
 }
 
-
-submit_test.addEventListener("click", ()=> {
-    if (answer_list.length <  parseInt(localStorage.getItem("question-count"))/2) {
-        alert("Must finish 50% of the test before you can submit")
-    }
-})
+submit_test.addEventListener("click", () => {
+  if (
+    answer_list.length <
+    parseInt(localStorage.getItem("question-count")) / 2
+  ) {
+    alert("Must finish 50% of the test before you can submit");
+    return "";
+  }
+  saveToIndexedDB(
+    {
+      subject: localStorage.getItem("subject"),
+      data: answer_list,
+      question: questions_list,
+    },
+    "history"
+  );
+});

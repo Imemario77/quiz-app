@@ -23,11 +23,6 @@ loader.addEventListener("animationend", () => {
   loader_div.style.display = "none";
 });
 
-if (localStorage.getItem("username")) {
-  register_name.style.display = "none";
-  user_name_display.innerHTML = localStorage.getItem("username");
-}
-
 function startTest(subject) {
   setTimeAndQuestion.classList.remove("hide");
   current_subject = subject;
@@ -82,12 +77,25 @@ start_test_now &&
     localStorage.setItem("question-count", question_input.value);
     localStorage.setItem("subject", current_subject);
     closeSetTimeAndQuestion.click();
-    window.location = window.location.href + "question.html";
+    if (window.location.href.endsWith("index.html")) {
+      window.location = window.location.href.replace("index", "question");
+    } else window.location = window.location.href + "question.html";
   });
 
-save_name.addEventListener("click", () => {
-  if (user_name.value !== "") {
-    localStorage.setItem("username", user_name.value);
-    register_name.style.display = "none";
-  }
-});
+save_name &&
+  save_name.addEventListener("click", () => {
+    if (user_name.value !== "") {
+      localStorage.setItem("username", user_name.value);
+      register_name.style.display = "none";
+      user_name_display.innerHTML = localStorage.getItem("username");
+    }
+  });
+
+if (!localStorage.getItem("username")) {
+  register_name.style.display = "flex";
+} else {
+  user_name_display
+    ? (user_name_display.innerHTML = localStorage.getItem("username"))
+    : null;
+  register_name ? (register_name.style.display = "none") : null;
+}
