@@ -92,10 +92,21 @@
   position: relative;
 }
 
-.welcome-section div span:last-child {
+.welcome-section aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-edit {
+  color: white;
+  margin-top: 15px;
+}
+
+.display-username {
   color: var(--white-color);
-  font-size: 25px;
-  display: block;
+  font-size: 25px !important;
+  margin-bottom: 7px;
 }
 
 .welcome-section input {
@@ -172,6 +183,12 @@ footer {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   align-items: center;
+}
+
+.home-btn {
+  color: var(--main-color);
+  background: var(--accent-color);
+  border-radius: 20px;
 }
 
 footer span {

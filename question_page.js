@@ -199,7 +199,7 @@ submit_test.addEventListener("click", () => {
     answer_list.length < parseInt(localStorage.getItem("question-count")) / 2 &&
     time_up === false
   ) {
-    alert("Must finish 50% of the test before you can submit");
+    modal_box("Must finish 50% of the test before you can submit");
     return "";
   }
   saveToIndexedDB(
@@ -219,12 +219,6 @@ submit_test.addEventListener("click", () => {
 });
 
 quit_test &&
-  quit_test.addEventListener("click", () => {
-    const ans = confirm("are you ready to quit this test");
-    if (ans) {
-      const name = localStorage.getItem("username");
-      localStorage.clear();
-      localStorage.setItem("username", name);
-      window.location = window.location.href.replace("question", "index");
-    }
+  quit_test.addEventListener("click",  () => {
+    confrim_modal_box("are you ready to quit this test");
   });

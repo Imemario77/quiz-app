@@ -28,3 +28,60 @@
 .fixed {
   position: fixed;
 }
+
+.modal {
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.505);
+  width: 100%;
+  height: 100vh;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 50px;
+}
+
+.modal-div {
+  width: 400px;
+  min-height: 100px;
+  background-color: var(--white-color);
+  height: fit-content;
+  padding: 20px 30px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.modal div span {
+  padding: 10px;
+  /* border: 2px solid red; */
+  margin-top: -50px;
+}
+.fa-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+
+.modal-div-3 {
+padding:10px;
+display:flex;
+justify-content: space-between;
+} 
+.modal-div-3 button{
+  padding:5px 10px;
+  border-radius:8px;
+  border:none;
+  
+}
+.modal-div-3 button:nth-child(1){
+  background-color:var(--main-color);
+  color:var(--white-color);
+  
+}
+.modal-div-3 button:nth-child(2){
+  background-color:orangered;
+  color:var(--white-color);
+
+}
