@@ -53,35 +53,31 @@
 }
 
 .modal div span {
-  padding: 10px;
-  /* border: 2px solid red; */
   margin-top: -50px;
 }
+
 .fa-close {
   position: absolute;
   top: 15px;
   right: 15px;
 }
 
-
 .modal-div-3 {
-padding:10px;
-display:flex;
-justify-content: space-between;
-} 
-.modal-div-3 button{
-  padding:5px 10px;
-  border-radius:8px;
-  border:none;
-  
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
-.modal-div-3 button:nth-child(1){
-  background-color:var(--main-color);
-  color:var(--white-color);
-  
+.modal-div-3 button {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: none;
 }
-.modal-div-3 button:nth-child(2){
-  background-color:orangered;
-  color:var(--white-color);
-
+.modal-div-3 button:nth-child(1) {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+.modal-div-3 button:nth-child(2) {
+  background-color: orangered;
+  color: var(--white-color);
 }

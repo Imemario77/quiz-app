@@ -481,3 +481,22 @@ footer span p {
   padding: 15px 20px;
   align-self: flex-end;
 }
+
+.register-name img {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.register-name p {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.register-name img:nth-child(1) {
+  top: 5%;
+  left: 5%;
+}

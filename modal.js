@@ -2,6 +2,7 @@ function modal_box(message) {
   const div = document.createElement("div");
   div.setAttribute("class", "modal fixed");
   const div2 = document.createElement("div");
+  div2.setAttribute("class", "modal-div");
   const span = document.createElement("span");
   span.innerText = message;
   const i = document.createElement("i");

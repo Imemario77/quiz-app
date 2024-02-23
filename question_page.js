@@ -20,8 +20,9 @@ if (localStorage.getItem("subject")) {
       subject_questions = math;
       number_of_ques = math.length;
       break;
-    case "chemistry":
-      subject_questions = math;
+      case "chemistry":
+        subject_questions = chem;
+        number_of_ques = chem.length;
       break;
     case "Biology":
       subject_questions = biology;
@@ -34,7 +35,8 @@ if (localStorage.getItem("subject")) {
       subject_questions = math;
       break;
     case "English":
-      subject_questions = math;
+      subject_questions = english;
+      number_of_ques = english.length;
       break;
     case "Literature":
       subject_questions = math;
@@ -116,11 +118,11 @@ if (
 if (question_total_number)
   question_total_number.innerHTML = localStorage.getItem("question-count");
 
-// const res = biology.map((ma, i) => {
-//   return { ...ma, index: i + 1 };
-// });
+const res = english.map((ma, i) => {
+  return { ...ma, index: i + 1 };
+});
 
-// console.log(res);
+console.log(res);
 
 if (questions_list.length <= 0) {
   for (let index = 0; index < 1000; index++) {

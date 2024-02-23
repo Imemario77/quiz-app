@@ -76,10 +76,17 @@ question_input &&
       question_input.value = "100";
       modal_box("Number of questions should be less than or equal to 100");
     }
+
+    if (e.target.value === "") {
+      question_input.value = "50";
+    }
   });
 
 start_test_now &&
   start_test_now.addEventListener("click", () => {
+    if (parseInt(hour.value) + parseInt(min.value) + parseInt(sec.value) <= 5) {
+      min.value = "45";
+    }
     localStorage.setItem("hour", hour.value);
     localStorage.setItem("min", min.value);
     localStorage.setItem("sec", sec.value);
@@ -113,11 +120,13 @@ function searchItem() {
   subject_click_box.forEach((box) => {
     box.classList.remove("b-m-c");
     const id_attr = box.getAttribute("id");
-    if (id_attr.toLowerCase().startsWith(search_input.value.toLowerCase())) {
-      box.scrollIntoView({
-        behavior: "smooth",
-      });
-      box.classList.add("b-m-c");
+    if (search_input.value !== "") {
+      if (id_attr.toLowerCase().startsWith(search_input.value.toLowerCase())) {
+        box.scrollIntoView({
+          behavior: "smooth",
+        });
+        box.classList.add("b-m-c");
+      }
     }
   });
 }
