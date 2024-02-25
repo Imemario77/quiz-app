@@ -125,7 +125,7 @@ if (question_total_number)
 //   return { ...ma, index: i + 1 };
 // });
 
-console.log(res);
+// console.log(res);
 
 if (questions_list.length <= 0) {
   for (let index = 0; index < 1000; index++) {
