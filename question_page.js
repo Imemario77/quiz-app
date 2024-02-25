@@ -121,9 +121,9 @@ if (
 if (question_total_number)
   question_total_number.innerHTML = localStorage.getItem("question-count");
 
-const res = history.map((ma, i) => {
-  return { ...ma, index: i + 1 };
-});
+// const res = history.map((ma, i) => {
+//   return { ...ma, index: i + 1 };
+// });
 
 console.log(res);
 
