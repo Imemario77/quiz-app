@@ -29,17 +29,20 @@ if (localStorage.getItem("subject")) {
       number_of_ques = biology.length;
       break;
     case "Physics":
-      subject_questions = math;
+      subject_questions = physics;
+      number_of_ques = physics.length
       break;
     case "History":
-      subject_questions = math;
+      subject_questions = history;
+      number_of_ques = history.length;
       break;
     case "English":
       subject_questions = english;
       number_of_ques = english.length;
       break;
     case "Literature":
-      subject_questions = math;
+      subject_questions = literature;
+      number_of_ques = literature.length;
       break;
 
     default:
@@ -118,7 +121,7 @@ if (
 if (question_total_number)
   question_total_number.innerHTML = localStorage.getItem("question-count");
 
-const res = english.map((ma, i) => {
+const res = history.map((ma, i) => {
   return { ...ma, index: i + 1 };
 });
 
